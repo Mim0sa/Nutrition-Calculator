@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NCMainViewController.swift
 //  Nutrition-Calculator
 //
 //  Created by 吉乞悠 on 2020/8/1.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NCMainViewController: UIViewController {
     
     var menu: NCMenu!
 
@@ -24,7 +24,8 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController {
+// Static Model
+extension NCMainViewController {
     func fetchMenuFromPlist() {
         if let path = Bundle.main.path(forResource: "Menu", ofType:"plist"), let rawMenu = NSArray(contentsOfFile: path) {
             var foods: Set<NCFood> = []
