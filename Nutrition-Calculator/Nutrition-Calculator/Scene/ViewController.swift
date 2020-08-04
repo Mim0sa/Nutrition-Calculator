@@ -14,7 +14,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         fetchMenuFromPlist()
         
@@ -22,8 +21,7 @@ class ViewController: UIViewController {
             print(food.name)
         }
     }
-
-
+    
 }
 
 extension ViewController {

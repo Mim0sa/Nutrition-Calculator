@@ -166,7 +166,7 @@
 			<key>calories</key>
 			<integer>459</integer>
 			<key>protein</key>
-			<integer>24</integer>
+			<real>24</real>
 			<key>fat</key>
 			<real>23</real>
 			<key>carbohydrate</key>
@@ -191,7 +191,7 @@
 			<key>calories</key>
 			<integer>491</integer>
 			<key>protein</key>
-			<integer>26</integer>
+			<real>26</real>
 			<key>fat</key>
 			<real>23.4</real>
 			<key>carbohydrate</key>
@@ -277,5 +277,55 @@
 			<integer>448</integer>
 		</dict>
 	</dict>
+    <dict>
+        <key>name</key>
+        <string>安格斯厚牛培根堡</string>
+        <key>description</key>
+        <string></string>
+        <key>categoryType</key>
+        <string>汉堡</string>
+        <key>categoryIndex</key>
+        <integer>11</integer>
+        <key>nutritions</key>
+        <dict>
+            <key>calories</key>
+            <integer>660</integer>
+            <key>protein</key>
+            <real>34.2</real>
+            <key>fat</key>
+            <real>38.5</real>
+            <key>carbohydrate</key>
+            <real>43.6</real>
+            <key>sodium</key>
+            <integer>1105</integer>
+            <key>calcium</key>
+            <integer>179</integer>
+        </dict>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>安格斯厚牛芝士堡</string>
+        <key>description</key>
+        <string></string>
+        <key>categoryType</key>
+        <string>汉堡</string>
+        <key>categoryIndex</key>
+        <integer>12</integer>
+        <key>nutritions</key>
+        <dict>
+            <key>calories</key>
+            <integer>620</integer>
+            <key>protein</key>
+            <real>28.1</real>
+            <key>fat</key>
+            <real>33.5</real>
+            <key>carbohydrate</key>
+            <real>40.9</real>
+            <key>sodium</key>
+            <integer>699</integer>
+            <key>calcium</key>
+            <integer>95</integer>
+        </dict>
+    </dict>
 </array>
 </plist>
