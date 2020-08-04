@@ -28,9 +28,12 @@ extension NCMenuViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuCell", for: indexPath)
-        cell.backgroundColor = .green
+        cell.backgroundColor = UIColor(withHex: 0xeeeeee)
         return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! NCMenuCell
+        cell.isChosen = true
+    }
 }

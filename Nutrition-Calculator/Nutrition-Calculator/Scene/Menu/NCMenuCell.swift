@@ -13,4 +13,15 @@ class NCMenuCell: UICollectionViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var image: UIImageView!
     
+    var isChosen: Bool = false {
+        willSet {
+            updateBorder(with: newValue)
+        }
+    }
+    
+    func updateBorder(with isChosen: Bool) {
+        layer.borderWidth = 3
+        layer.borderColor = UIColor.orange.cgColor
+    }
+    
 }

@@ -13,6 +13,7 @@
 		1B444DFC24D508AA00C1CC36 /* NutritionCalculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B444DFA24D508AA00C1CC36 /* NutritionCalculator.storyboard */; };
 		1B444DFE24D508B000C1CC36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B444DFD24D508B000C1CC36 /* Assets.xcassets */; };
 		1B444E0124D508B000C1CC36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B444DFF24D508B000C1CC36 /* LaunchScreen.storyboard */; };
+		1B444E0D24D9961200C1CC36 /* Extension+UIcolor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B444E0C24D9961200C1CC36 /* Extension+UIcolor.swift */; };
 		83645DF424D9280500F41618 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83645DF324D9280500F41618 /* Food.swift */; };
 		83645DF624D92A7A00F41618 /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83645DF524D92A7A00F41618 /* Nutrition.swift */; };
 		83645DF824D92D3B00F41618 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83645DF724D92D3B00F41618 /* Menu.swift */; };
@@ -31,6 +32,7 @@
 		1B444DFD24D508B000C1CC36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B444E0024D508B000C1CC36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B444E0224D508B000C1CC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B444E0C24D9961200C1CC36 /* Extension+UIcolor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIcolor.swift"; sourceTree = "<group>"; };
 		83645DF324D9280500F41618 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		83645DF524D92A7A00F41618 /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
 		83645DF724D92D3B00F41618 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		1B444E0824D5099400C1CC36 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				1B444E0C24D9961200C1CC36 /* Extension+UIcolor.swift */,
 				1B444DF424D508AA00C1CC36 /* AppDelegate.swift */,
 				1B444DF624D508AA00C1CC36 /* SceneDelegate.swift */,
 				1B444DFF24D508B000C1CC36 /* LaunchScreen.storyboard */,
@@ -93,12 +96,28 @@
 			isa = PBXGroup;
 			children = (
 				1B444DFA24D508AA00C1CC36 /* NutritionCalculator.storyboard */,
-				1B444DF824D508AA00C1CC36 /* NCMainViewController.swift */,
-				83D11A4F24D96702002C975E /* NCMenuViewController.swift */,
-				83D11A5124D9675E002C975E /* NCMenuCell.swift */,
-				83D11A5324D967FB002C975E /* NCMenuFlowLayout.swift */,
+				1B444E0A24D992B300C1CC36 /* Main */,
+				1B444E0B24D992C000C1CC36 /* Menu */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		1B444E0A24D992B300C1CC36 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1B444DF824D508AA00C1CC36 /* NCMainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1B444E0B24D992C000C1CC36 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				83D11A4F24D96702002C975E /* NCMenuViewController.swift */,
+				83D11A5324D967FB002C975E /* NCMenuFlowLayout.swift */,
+				83D11A5124D9675E002C975E /* NCMenuCell.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		83645DF224D927DD00F41618 /* Model */ = {
@@ -188,6 +207,7 @@
 				83645DF824D92D3B00F41618 /* Menu.swift in Sources */,
 				83D11A5224D9675E002C975E /* NCMenuCell.swift in Sources */,
 				1B444DF924D508AA00C1CC36 /* NCMainViewController.swift in Sources */,
+				1B444E0D24D9961200C1CC36 /* Extension+UIcolor.swift in Sources */,
 				83645DF424D9280500F41618 /* Food.swift in Sources */,
 				83D11A5024D96702002C975E /* NCMenuViewController.swift in Sources */,
 				83645DF624D92A7A00F41618 /* Nutrition.swift in Sources */,

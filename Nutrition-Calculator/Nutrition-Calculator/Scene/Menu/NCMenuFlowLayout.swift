@@ -17,7 +17,7 @@ class NCMenuFlowLayout: UICollectionViewFlowLayout {
         minimumLineSpacing = 20
         minimumInteritemSpacing = 20
 
-        itemSize = CGSize(width: (screenWidth - 4 * 20) / 3, height: (screenWidth - 4 * 20) / 3 * 2)
+        itemSize = CGSize(width: (screenWidth - 4 * 20) / 3, height: (screenWidth - 4 * 20) / 3 * 1.4)
     }
 }
 
