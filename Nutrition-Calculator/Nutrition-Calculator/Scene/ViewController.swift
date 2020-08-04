@@ -31,10 +31,14 @@ class ViewController: UIViewController {
                                       name:          rawFood["name"]          as! String,
                                       description:   rawFood["description"]   as? String,
                                       nutritions:    nutritions)
-                    print(foods.insert(food).inserted)
+                    foods.insert(food)
                 }
             }
             menu = NCMenu(with: foods)
+        }
+        
+        for food in menu.menu["汉堡"]! {
+            print(food.name)
         }
     }
 

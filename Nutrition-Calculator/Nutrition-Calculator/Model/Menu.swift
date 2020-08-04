@@ -22,8 +22,10 @@ struct NCMenu {
                         menu[food.categoryType]!.insert(food, at: i)
                         break
                     }
-                }
-                menu[food.categoryType]!.append(food)
+                    if i == list.count - 1 {
+                        menu[food.categoryType]!.append(food)
+                    }
+                } 
             } else {
                 menu[food.categoryType] = []
                 menu[food.categoryType]!.append(food)
