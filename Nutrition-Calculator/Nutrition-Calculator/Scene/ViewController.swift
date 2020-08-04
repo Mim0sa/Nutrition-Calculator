@@ -16,6 +16,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        fetchMenuFromPlist()
+        
+        for food in menu.menu["汉堡"]! {
+            print(food.name)
+        }
+    }
+
+
+}
+
+extension ViewController {
+    func fetchMenuFromPlist() {
         if let path = Bundle.main.path(forResource: "Foods", ofType:"plist"), let rawMenu = NSArray(contentsOfFile: path) {
             var foods: Set<NCFood> = []
             for rawFood in rawMenu {
@@ -36,12 +48,6 @@ class ViewController: UIViewController {
             }
             menu = NCMenu(with: foods)
         }
-        
-        for food in menu.menu["汉堡"]! {
-            print(food.name)
-        }
     }
-
-
 }
 

@@ -2,31 +2,31 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<dict>
-		<key>name</key>
-		<string>汉堡包</string>
-		<key>description</key>
+    <dict>
+        <key>name</key>
+        <string>汉堡包</string>
+        <key>description</key>
         <string>能量约苹果2个</string>
-		<key>categoryType</key>
-		<string>汉堡</string>
-		<key>categoryIndex</key>
-		<integer>0</integer>
-		<key>nutritions</key>
-		<dict>
-			<key>calories</key>
-			<integer>245</integer>
-			<key>protein</key>
-			<real>12.9</real>
-			<key>fat</key>
-			<real>7.8</real>
-			<key>carbohydrate</key>
-			<real>29.5</real>
-			<key>sodium</key>
-			<integer>522</integer>
-			<key>calcium</key>
-			<integer>143</integer>
-		</dict>
-	</dict>
+        <key>categoryType</key>
+        <string>汉堡</string>
+        <key>categoryIndex</key>
+        <integer>0</integer>
+        <key>nutritions</key>
+        <dict>
+            <key>calories</key>
+            <integer>245</integer>
+            <key>protein</key>
+            <real>12.9</real>
+            <key>fat</key>
+            <real>7.8</real>
+            <key>carbohydrate</key>
+            <real>29.5</real>
+            <key>sodium</key>
+            <integer>522</integer>
+            <key>calcium</key>
+            <integer>143</integer>
+        </dict>
+    </dict>
     <dict>
         <key>name</key>
         <string>吉士汉堡包</string>
@@ -177,104 +177,29 @@
             <integer>154</integer>
         </dict>
     </dict>
-	<dict>
-		<key>name</key>
-		<string>巨无霸</string>
-		<key>description</key>
+    <dict>
+        <key>name</key>
+        <string>巨无霸</string>
+        <key>description</key>
         <string>能量约梨5个</string>
-		<key>categoryType</key>
-		<string>汉堡</string>
-		<key>categoryIndex</key>
-		<integer>7</integer>
-		<key>nutritions</key>
-		<dict>
-			<key>calories</key>
-			<integer>491</integer>
-			<key>protein</key>
-			<integer>26</integer>
-			<key>fat</key>
-			<real>23.4</real>
-			<key>carbohydrate</key>
-			<real>42.6</real>
-			<key>sodium</key>
-			<integer>809</integer>
-			<key>calcium</key>
-			<integer>252</integer>
-		</dict>
-	</dict>
-    <dict>
-        <key>name</key>
-        <string>原味板烧鸡腿堡</string>
-        <key>description</key>
-        <string>能量约红薯4个</string>
         <key>categoryType</key>
         <string>汉堡</string>
         <key>categoryIndex</key>
-        <integer>8</integer>
+        <integer>7</integer>
         <key>nutritions</key>
         <dict>
             <key>calories</key>
-            <integer>404</integer>
+            <integer>491</integer>
             <key>protein</key>
-            <integer>22.9</integer>
-            <key>fat</key>
-            <real>17.5</real>
-            <key>carbohydrate</key>
-            <real>37.2</real>
-            <key>sodium</key>
-            <integer>1174</integer>
-            <key>calcium</key>
-            <integer>221</integer>
-        </dict>
-    </dict>
-    <dict>
-        <key>name</key>
-        <string>不素之霸双层牛堡</string>
-        <key>description</key>
-        <string></string>
-        <key>categoryType</key>
-        <string>汉堡</string>
-        <key>categoryIndex</key>
-        <integer>9</integer>
-        <key>nutritions</key>
-        <dict>
-            <key>calories</key>
-            <integer>454</integer>
-            <key>protein</key>
-            <integer>27.7</integer>
+            <integer>26</integer>
             <key>fat</key>
             <real>23.4</real>
             <key>carbohydrate</key>
-            <real>32</real>
+            <real>42.6</real>
             <key>sodium</key>
-            <integer>898</integer>
+            <integer>809</integer>
             <key>calcium</key>
-            <integer>99</integer>
-        </dict>
-    </dict>
-    <dict>
-        <key>name</key>
-        <string>双层深海鳕鱼堡</string>
-        <key>description</key>
-        <string>相当于5个大虾</string>
-        <key>categoryType</key>
-        <string>汉堡</string>
-        <key>categoryIndex</key>
-        <integer>10</integer>
-        <key>nutritions</key>
-        <dict>
-            <key>calories</key>
-            <integer>526</integer>
-            <key>protein</key>
-            <integer>25.2</integer>
-            <key>fat</key>
-            <real>24.6</real>
-            <key>carbohydrate</key>
-            <real>49.4</real>
-            <key>sodium</key>
-            <integer>912</integer>
-            <key>calcium</key>
-            <integer>448</integer>
+            <integer>252</integer>
         </dict>
     </dict>
 </array>
