@@ -22,9 +22,5 @@ struct NCFood: NCCategorizable, Hashable {
     var description: String?
     
     var nutritions: NCNutrition
-    
-    static func == (lhs: NCFood, rhs: NCFood) -> Bool {
-        return lhs.name == rhs.name
-    }
 
 }
