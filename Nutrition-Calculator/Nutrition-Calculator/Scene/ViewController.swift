@@ -28,7 +28,7 @@ class ViewController: UIViewController {
 
 extension ViewController {
     func fetchMenuFromPlist() {
-        if let path = Bundle.main.path(forResource: "Foods", ofType:"plist"), let rawMenu = NSArray(contentsOfFile: path) {
+        if let path = Bundle.main.path(forResource: "Menu", ofType:"plist"), let rawMenu = NSArray(contentsOfFile: path) {
             var foods: Set<NCFood> = []
             for rawFood in rawMenu {
                 if let rawFood = rawFood as? [String:Any], let rawNutritions = rawFood["nutritions"] as? [String:Any] {
