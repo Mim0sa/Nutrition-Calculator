@@ -13,6 +13,10 @@
 		1B444DFC24D508AA00C1CC36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B444DFA24D508AA00C1CC36 /* Main.storyboard */; };
 		1B444DFE24D508B000C1CC36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B444DFD24D508B000C1CC36 /* Assets.xcassets */; };
 		1B444E0124D508B000C1CC36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B444DFF24D508B000C1CC36 /* LaunchScreen.storyboard */; };
+		83645DF424D9280500F41618 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83645DF324D9280500F41618 /* Food.swift */; };
+		83645DF624D92A7A00F41618 /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83645DF524D92A7A00F41618 /* Nutrition.swift */; };
+		83645DF824D92D3B00F41618 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83645DF724D92D3B00F41618 /* Menu.swift */; };
+		83645DFA24D934EB00F41618 /* Foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83645DF924D934EB00F41618 /* Foods.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		1B444DFD24D508B000C1CC36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B444E0024D508B000C1CC36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B444E0224D508B000C1CC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83645DF324D9280500F41618 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		83645DF524D92A7A00F41618 /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
+		83645DF724D92D3B00F41618 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		83645DF924D934EB00F41618 /* Foods.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Foods.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,7 @@
 				1B444E0224D508B000C1CC36 /* Info.plist */,
 				1B444DFD24D508B000C1CC36 /* Assets.xcassets */,
 				1B444E0924D509B100C1CC36 /* Scene */,
+				83645DF224D927DD00F41618 /* Model */,
 				1B444E0824D5099400C1CC36 /* Support */,
 			);
 			path = "Nutrition-Calculator";
@@ -81,6 +90,17 @@
 				1B444DF824D508AA00C1CC36 /* ViewController.swift */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		83645DF224D927DD00F41618 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83645DF724D92D3B00F41618 /* Menu.swift */,
+				83645DF324D9280500F41618 /* Food.swift */,
+				83645DF524D92A7A00F41618 /* Nutrition.swift */,
+				83645DF924D934EB00F41618 /* Foods.plist */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83645DFA24D934EB00F41618 /* Foods.plist in Resources */,
 				1B444E0124D508B000C1CC36 /* LaunchScreen.storyboard in Resources */,
 				1B444DFE24D508B000C1CC36 /* Assets.xcassets in Resources */,
 				1B444DFC24D508AA00C1CC36 /* Main.storyboard in Resources */,
@@ -155,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83645DF824D92D3B00F41618 /* Menu.swift in Sources */,
 				1B444DF924D508AA00C1CC36 /* ViewController.swift in Sources */,
+				83645DF424D9280500F41618 /* Food.swift in Sources */,
+				83645DF624D92A7A00F41618 /* Nutrition.swift in Sources */,
 				1B444DF524D508AA00C1CC36 /* AppDelegate.swift in Sources */,
 				1B444DF724D508AA00C1CC36 /* SceneDelegate.swift in Sources */,
 			);
