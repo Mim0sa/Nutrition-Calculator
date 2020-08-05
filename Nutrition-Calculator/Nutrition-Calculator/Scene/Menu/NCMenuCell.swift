@@ -2,7 +2,7 @@
 //  NCMenuCell.swift
 //  Nutrition-Calculator
 //
-//  Created by CM on 2020/8/4.
+//  Created by 吉乞悠 on 2020/8/4.
 //  Copyright © 2020 吉乞悠. All rights reserved.
 //
 
@@ -20,8 +20,14 @@ class NCMenuCell: UICollectionViewCell {
     }
     
     func updateBorder(with isChosen: Bool) {
-        layer.borderWidth = 3
-        layer.borderColor = UIColor.orange.cgColor
+        if isChosen {
+            layer.borderWidth = 1
+            layer.borderColor = UIColor.orange.cgColor
+        } else {
+            layer.borderWidth = 0
+            layer.borderColor = UIColor.orange.cgColor
+        }
+        
     }
     
 }

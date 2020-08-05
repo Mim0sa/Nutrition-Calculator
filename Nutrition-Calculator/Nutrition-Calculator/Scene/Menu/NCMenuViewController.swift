@@ -2,7 +2,7 @@
 //  NCMenuViewController.swift
 //  Nutrition-Calculator
 //
-//  Created by CM on 2020/8/4.
+//  Created by 吉乞悠 on 2020/8/4.
 //  Copyright © 2020 吉乞悠. All rights reserved.
 //
 
@@ -11,6 +11,8 @@ import UIKit
 class NCMenuViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var menu: NCMenu!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,12 +30,11 @@ extension NCMenuViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuCell", for: indexPath)
-        cell.backgroundColor = UIColor(withHex: 0xeeeeee)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! NCMenuCell
-        cell.isChosen = true
+        cell.isChosen.toggle()
     }
 }

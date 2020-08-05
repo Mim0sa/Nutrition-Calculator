@@ -22,6 +22,14 @@ class NCMainViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else { return }
+        if identifier == "MenuVC" {
+            guard let menuVC = segue.destination as? NCMenuViewController else { fatalError() }
+            menuVC.menu = menu
+        }
+    }
+    
 }
 
 // Static Model

@@ -190,7 +190,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzF-WY-SiP">
                                 <rect key="frame" x="0.0" y="204.66666666666669" width="414" height="691.33333333333326"/>
                                 <connections>
-                                    <segue destination="C8l-mY-In8" kind="embed" id="FBN-1W-65g"/>
+                                    <segue destination="C8l-mY-In8" kind="embed" identifier="MenuVC" id="FBN-1W-65g"/>
                                 </connections>
                             </containerView>
                         </subviews>
