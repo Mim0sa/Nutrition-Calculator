@@ -10,6 +10,8 @@ import UIKit
 
 class NCMainViewController: UIViewController {
     
+    @IBOutlet var nutritionLabels: [UILabel]!
+    
     var menu: NCMenu!
     
     override func awakeFromNib() {
@@ -21,23 +23,31 @@ class NCMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for food in menu.menu["汉堡"]! {
-            print(food.name)
-        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier else { return }
         if identifier == "MenuVC" {
             guard let menuVC = segue.destination as? NCMenuViewController else { fatalError() }
+            menuVC.delegate = self
             menuVC.menu = menu
-            print("1")
         }
     }
-    
 }
 
-// Static Model
+extension NCMainViewController: NCMenuViewControllerDelegate {
+    func menuViewControllerDidUpdateChosenFood(_ vc: NCMenuViewController, chosenFood: [NCFood]) {
+        let nutritions = menu.getSumNutritions(with: chosenFood)
+        nutritionLabels[0].text = "\(nutritions.calories)/\(nutritions.calories_joule)"
+        nutritionLabels[1].text = String(format: "%.1f", nutritions.protein)
+        nutritionLabels[2].text = String(format: "%.1f", nutritions.fat)
+        nutritionLabels[3].text = String(format: "%.1f", nutritions.carbohydrate)
+        nutritionLabels[4].text = String(format: "%.0f", nutritions.sodium)
+        nutritionLabels[5].text = String(format: "%.0f", nutritions.calcium)
+    }
+}
+
+// Helpers & Static Model
 extension NCMainViewController {
     func fetchMenuFromPlist() {
         if let path = Bundle.main.path(forResource: "Menu", ofType:"plist"), let rawMenu = NSArray(contentsOfFile: path) {

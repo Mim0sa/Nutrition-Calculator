@@ -10,12 +10,12 @@ import Foundation
 
 struct NCNutrition: Hashable {
     
-    let calories: Int
-    let protein: Double
-    let fat: Double
-    let carbohydrate: Double
-    let sodium: Double
-    let calcium: Double
+    var calories: Int
+    var protein: Double
+    var fat: Double
+    var carbohydrate: Double
+    var sodium: Double
+    var calcium: Double
     
     var calories_joule: Int {
         get { return Int(Float(calories) * 4.184) }

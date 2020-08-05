@@ -32,4 +32,17 @@ struct NCMenu {
             }
         }
     }
+    
+    func getSumNutritions(with chosenFood: [NCFood]) -> NCNutrition {
+        var nutritions = NCNutrition(calories: 0, protein: 0, fat: 0, carbohydrate: 0, sodium: 0, calcium: 0)
+        for food in chosenFood {
+            nutritions.calories += food.nutritions.calories
+            nutritions.protein += food.nutritions.protein
+            nutritions.fat += food.nutritions.fat
+            nutritions.carbohydrate += food.nutritions.carbohydrate
+            nutritions.sodium += food.nutritions.sodium
+            nutritions.calcium += food.nutritions.calcium
+        }
+        return nutritions
+    }
 }
