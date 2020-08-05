@@ -270,6 +270,7 @@
                                         <size key="customSize" width="140" height="224"/>
                                         <connections>
                                             <outlet property="image" destination="Qax-HM-IXd" id="WbN-3g-iko"/>
+                                            <outlet property="subTitle" destination="7Nw-pz-VVO" id="xuJ-67-hbB"/>
                                             <outlet property="title" destination="GXZ-Tw-ahQ" id="eSG-9d-ngK"/>
                                         </connections>
                                     </collectionViewCell>

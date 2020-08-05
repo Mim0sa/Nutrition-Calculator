@@ -19,7 +19,7 @@ struct NCFood: NCCategorizable, Hashable {
     var categoryIndex: Int
 
     var name: String
-    var description: String?
+    var description: String
     
     var nutritions: NCNutrition
 

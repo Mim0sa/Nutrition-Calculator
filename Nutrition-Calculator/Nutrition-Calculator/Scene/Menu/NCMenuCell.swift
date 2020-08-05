@@ -12,6 +12,15 @@ class NCMenuCell: UICollectionViewCell {
     
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var subTitle: UILabel!
+    
+    var info: (title: String, subTitle: String, image: UIImage)? {
+        willSet {
+            title.text = newValue?.title
+            subTitle.text = newValue?.subTitle
+            image.image = newValue?.image
+        }
+    }
     
     var isChosen: Bool = false {
         willSet {

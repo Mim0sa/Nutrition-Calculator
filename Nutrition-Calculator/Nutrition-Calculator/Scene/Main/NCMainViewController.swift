@@ -11,11 +11,15 @@ import UIKit
 class NCMainViewController: UIViewController {
     
     var menu: NCMenu!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        fetchMenuFromPlist()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        fetchMenuFromPlist()
         
         for food in menu.menu["汉堡"]! {
             print(food.name)
@@ -27,6 +31,7 @@ class NCMainViewController: UIViewController {
         if identifier == "MenuVC" {
             guard let menuVC = segue.destination as? NCMenuViewController else { fatalError() }
             menuVC.menu = menu
+            print("1")
         }
     }
     
@@ -48,7 +53,7 @@ extension NCMainViewController {
                     let food = NCFood(categoryType:  rawFood["categoryType"]  as! String,
                                       categoryIndex: rawFood["categoryIndex"] as! Int,
                                       name:          rawFood["name"]          as! String,
-                                      description:   rawFood["description"]   as? String,
+                                      description:   rawFood["description"]   as! String,
                                       nutritions:    nutritions)
                     foods.insert(food)
                 }
