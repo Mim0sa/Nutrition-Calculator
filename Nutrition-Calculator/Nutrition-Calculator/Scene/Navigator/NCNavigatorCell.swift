@@ -13,4 +13,10 @@ class NCNavigatorCell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var title: UILabel!
     
+    var isChosen = false {
+        didSet {
+            
+        }
+    }
+    
 }
