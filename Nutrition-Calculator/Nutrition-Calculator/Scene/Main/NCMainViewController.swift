@@ -32,10 +32,15 @@ class NCMainViewController: UIViewController {
             menuVC.delegate = self
             menuVC.menu = menu
         }
+        if identifier == "NavigatorVC" {
+            guard let menuVC = segue.destination as? NCNavigatorViewController else { fatalError() }
+            menuVC.delegate = self
+            menuVC.menu = menu
+        }
     }
 }
 
-extension NCMainViewController: NCMenuViewControllerDelegate {
+extension NCMainViewController: NCMenuViewControllerDelegate, NCNavigatorViewControllerDelegate {
     func menuViewControllerDidUpdateChosenFood(_ vc: NCMenuViewController, chosenFood: [NCFood]) {
         let nutritions = menu.getSumNutritions(with: chosenFood)
         nutritionLabels[0].text = "\(nutritions.calories)/\(nutritions.calories_joule)"
@@ -44,6 +49,10 @@ extension NCMainViewController: NCMenuViewControllerDelegate {
         nutritionLabels[3].text = String(format: "%.1f", nutritions.carbohydrate)
         nutritionLabels[4].text = String(format: "%.0f", nutritions.sodium)
         nutritionLabels[5].text = String(format: "%.0f", nutritions.calcium)
+    }
+    
+    func navigatorViewControllerDidUpdateChosenCategory(_ vc: NCNavigatorViewController, categoryName: String) {
+        
     }
 }
 

@@ -14,6 +14,22 @@
 		1B444DFE24D508B000C1CC36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B444DFD24D508B000C1CC36 /* Assets.xcassets */; };
 		1B444E0124D508B000C1CC36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B444DFF24D508B000C1CC36 /* LaunchScreen.storyboard */; };
 		1B444E0D24D9961200C1CC36 /* Extension+UIcolor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B444E0C24D9961200C1CC36 /* Extension+UIcolor.swift */; };
+		1B444E2924DAD6C900C1CC36 /* 吉士汉堡包.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E1C24DAD6C900C1CC36 /* 吉士汉堡包.png */; };
+		1B444E2A24DAD6C900C1CC36 /* 麦香鸡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E1D24DAD6C900C1CC36 /* 麦香鸡.png */; };
+		1B444E2B24DAD6C900C1CC36 /* 原味板烧鸡腿堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E1E24DAD6C900C1CC36 /* 原味板烧鸡腿堡.png */; };
+		1B444E2C24DAD6C900C1CC36 /* 不素之霸双层牛堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E1F24DAD6C900C1CC36 /* 不素之霸双层牛堡.png */; };
+		1B444E2D24DAD6C900C1CC36 /* 麦辣鸡腿汉堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2024DAD6C900C1CC36 /* 麦辣鸡腿汉堡.png */; };
+		1B444E2E24DAD6C900C1CC36 /* 双层深海鳕鱼堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2124DAD6C900C1CC36 /* 双层深海鳕鱼堡.png */; };
+		1B444E2F24DAD6C900C1CC36 /* 巨无霸.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2224DAD6C900C1CC36 /* 巨无霸.png */; };
+		1B444E3024DAD6C900C1CC36 /* 安格斯厚牛芝士堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2324DAD6C900C1CC36 /* 安格斯厚牛芝士堡.png */; };
+		1B444E3124DAD6C900C1CC36 /* 汉堡包.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2424DAD6C900C1CC36 /* 汉堡包.png */; };
+		1B444E3224DAD6C900C1CC36 /* 培根蔬萃双层牛堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2524DAD6C900C1CC36 /* 培根蔬萃双层牛堡.png */; };
+		1B444E3324DAD6C900C1CC36 /* 安格斯厚牛培根堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2624DAD6C900C1CC36 /* 安格斯厚牛培根堡.png */; };
+		1B444E3424DAD6C900C1CC36 /* 麦香鱼.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2724DAD6C900C1CC36 /* 麦香鱼.png */; };
+		1B444E3524DAD6C900C1CC36 /* 双层吉士汉堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2824DAD6C900C1CC36 /* 双层吉士汉堡.png */; };
+		1B444E3824DAF24200C1CC36 /* NCNavigatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B444E3724DAF24200C1CC36 /* NCNavigatorViewController.swift */; };
+		1B444E3A24DAFAB500C1CC36 /* NCNavigatorFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B444E3924DAFAB500C1CC36 /* NCNavigatorFlowLayout.swift */; };
+		1B444E3C24DC27F300C1CC36 /* NCNavigatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B444E3B24DC27F300C1CC36 /* NCNavigatorCell.swift */; };
 		83645DF424D9280500F41618 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83645DF324D9280500F41618 /* Food.swift */; };
 		83645DF624D92A7A00F41618 /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83645DF524D92A7A00F41618 /* Nutrition.swift */; };
 		83645DF824D92D3B00F41618 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83645DF724D92D3B00F41618 /* Menu.swift */; };
@@ -21,19 +37,6 @@
 		83D11A5024D96702002C975E /* NCMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D11A4F24D96702002C975E /* NCMenuViewController.swift */; };
 		83D11A5224D9675E002C975E /* NCMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D11A5124D9675E002C975E /* NCMenuCell.swift */; };
 		83D11A5424D967FB002C975E /* NCMenuFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D11A5324D967FB002C975E /* NCMenuFlowLayout.swift */; };
-		83D11A6324DAA025002C975E /* 吉士汉堡包.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D11A5624DAA025002C975E /* 吉士汉堡包.png */; };
-		83D11A6424DAA025002C975E /* 麦香鸡.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D11A5724DAA025002C975E /* 麦香鸡.png */; };
-		83D11A6524DAA025002C975E /* 原味板烧鸡腿堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D11A5824DAA025002C975E /* 原味板烧鸡腿堡.png */; };
-		83D11A6624DAA025002C975E /* 不素之霸双层牛堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D11A5924DAA025002C975E /* 不素之霸双层牛堡.png */; };
-		83D11A6724DAA025002C975E /* 麦辣鸡腿汉堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D11A5A24DAA025002C975E /* 麦辣鸡腿汉堡.png */; };
-		83D11A6824DAA025002C975E /* 双层深海鳕鱼堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D11A5B24DAA025002C975E /* 双层深海鳕鱼堡.png */; };
-		83D11A6924DAA025002C975E /* 巨无霸.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D11A5C24DAA025002C975E /* 巨无霸.png */; };
-		83D11A6A24DAA025002C975E /* 安格斯厚牛芝士堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D11A5D24DAA025002C975E /* 安格斯厚牛芝士堡.png */; };
-		83D11A6B24DAA025002C975E /* 汉堡包.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D11A5E24DAA025002C975E /* 汉堡包.png */; };
-		83D11A6C24DAA025002C975E /* 培根蔬萃双层牛堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D11A5F24DAA025002C975E /* 培根蔬萃双层牛堡.png */; };
-		83D11A6D24DAA025002C975E /* 安格斯厚牛培根堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D11A6024DAA025002C975E /* 安格斯厚牛培根堡.png */; };
-		83D11A6E24DAA025002C975E /* 麦香鱼.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D11A6124DAA025002C975E /* 麦香鱼.png */; };
-		83D11A6F24DAA025002C975E /* 双层吉士汉堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D11A6224DAA025002C975E /* 双层吉士汉堡.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,22 @@
 		1B444E0024D508B000C1CC36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B444E0224D508B000C1CC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B444E0C24D9961200C1CC36 /* Extension+UIcolor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIcolor.swift"; sourceTree = "<group>"; };
+		1B444E1C24DAD6C900C1CC36 /* 吉士汉堡包.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "吉士汉堡包.png"; sourceTree = "<group>"; };
+		1B444E1D24DAD6C900C1CC36 /* 麦香鸡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦香鸡.png"; sourceTree = "<group>"; };
+		1B444E1E24DAD6C900C1CC36 /* 原味板烧鸡腿堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "原味板烧鸡腿堡.png"; sourceTree = "<group>"; };
+		1B444E1F24DAD6C900C1CC36 /* 不素之霸双层牛堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "不素之霸双层牛堡.png"; sourceTree = "<group>"; };
+		1B444E2024DAD6C900C1CC36 /* 麦辣鸡腿汉堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦辣鸡腿汉堡.png"; sourceTree = "<group>"; };
+		1B444E2124DAD6C900C1CC36 /* 双层深海鳕鱼堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "双层深海鳕鱼堡.png"; sourceTree = "<group>"; };
+		1B444E2224DAD6C900C1CC36 /* 巨无霸.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "巨无霸.png"; sourceTree = "<group>"; };
+		1B444E2324DAD6C900C1CC36 /* 安格斯厚牛芝士堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "安格斯厚牛芝士堡.png"; sourceTree = "<group>"; };
+		1B444E2424DAD6C900C1CC36 /* 汉堡包.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "汉堡包.png"; sourceTree = "<group>"; };
+		1B444E2524DAD6C900C1CC36 /* 培根蔬萃双层牛堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "培根蔬萃双层牛堡.png"; sourceTree = "<group>"; };
+		1B444E2624DAD6C900C1CC36 /* 安格斯厚牛培根堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "安格斯厚牛培根堡.png"; sourceTree = "<group>"; };
+		1B444E2724DAD6C900C1CC36 /* 麦香鱼.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦香鱼.png"; sourceTree = "<group>"; };
+		1B444E2824DAD6C900C1CC36 /* 双层吉士汉堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "双层吉士汉堡.png"; sourceTree = "<group>"; };
+		1B444E3724DAF24200C1CC36 /* NCNavigatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCNavigatorViewController.swift; sourceTree = "<group>"; };
+		1B444E3924DAFAB500C1CC36 /* NCNavigatorFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCNavigatorFlowLayout.swift; sourceTree = "<group>"; };
+		1B444E3B24DC27F300C1CC36 /* NCNavigatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCNavigatorCell.swift; sourceTree = "<group>"; };
 		83645DF324D9280500F41618 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		83645DF524D92A7A00F41618 /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
 		83645DF724D92D3B00F41618 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
@@ -53,19 +72,6 @@
 		83D11A4F24D96702002C975E /* NCMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCMenuViewController.swift; sourceTree = "<group>"; };
 		83D11A5124D9675E002C975E /* NCMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCMenuCell.swift; sourceTree = "<group>"; };
 		83D11A5324D967FB002C975E /* NCMenuFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCMenuFlowLayout.swift; sourceTree = "<group>"; };
-		83D11A5624DAA025002C975E /* 吉士汉堡包.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "吉士汉堡包.png"; sourceTree = "<group>"; };
-		83D11A5724DAA025002C975E /* 麦香鸡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦香鸡.png"; sourceTree = "<group>"; };
-		83D11A5824DAA025002C975E /* 原味板烧鸡腿堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "原味板烧鸡腿堡.png"; sourceTree = "<group>"; };
-		83D11A5924DAA025002C975E /* 不素之霸双层牛堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "不素之霸双层牛堡.png"; sourceTree = "<group>"; };
-		83D11A5A24DAA025002C975E /* 麦辣鸡腿汉堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦辣鸡腿汉堡.png"; sourceTree = "<group>"; };
-		83D11A5B24DAA025002C975E /* 双层深海鳕鱼堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "双层深海鳕鱼堡.png"; sourceTree = "<group>"; };
-		83D11A5C24DAA025002C975E /* 巨无霸.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "巨无霸.png"; sourceTree = "<group>"; };
-		83D11A5D24DAA025002C975E /* 安格斯厚牛芝士堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "安格斯厚牛芝士堡.png"; sourceTree = "<group>"; };
-		83D11A5E24DAA025002C975E /* 汉堡包.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "汉堡包.png"; sourceTree = "<group>"; };
-		83D11A5F24DAA025002C975E /* 培根蔬萃双层牛堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "培根蔬萃双层牛堡.png"; sourceTree = "<group>"; };
-		83D11A6024DAA025002C975E /* 安格斯厚牛培根堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "安格斯厚牛培根堡.png"; sourceTree = "<group>"; };
-		83D11A6124DAA025002C975E /* 麦香鱼.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦香鱼.png"; sourceTree = "<group>"; };
-		83D11A6224DAA025002C975E /* 双层吉士汉堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "双层吉士汉堡.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +106,7 @@
 			children = (
 				1B444E0224D508B000C1CC36 /* Info.plist */,
 				1B444DFD24D508B000C1CC36 /* Assets.xcassets */,
-				83D11A5524DAA025002C975E /* BurgerImage */,
+				1B444E1B24DAD6C900C1CC36 /* BurgerImage */,
 				1B444E0924D509B100C1CC36 /* Scene */,
 				83645DF224D927DD00F41618 /* Model */,
 				1B444E0824D5099400C1CC36 /* Support */,
@@ -125,6 +131,7 @@
 				1B444DFA24D508AA00C1CC36 /* NutritionCalculator.storyboard */,
 				1B444E0A24D992B300C1CC36 /* Main */,
 				1B444E0B24D992C000C1CC36 /* Menu */,
+				1B444E3624DAF20800C1CC36 /* Navigator */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -147,6 +154,36 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		1B444E1B24DAD6C900C1CC36 /* BurgerImage */ = {
+			isa = PBXGroup;
+			children = (
+				1B444E1C24DAD6C900C1CC36 /* 吉士汉堡包.png */,
+				1B444E1D24DAD6C900C1CC36 /* 麦香鸡.png */,
+				1B444E1E24DAD6C900C1CC36 /* 原味板烧鸡腿堡.png */,
+				1B444E1F24DAD6C900C1CC36 /* 不素之霸双层牛堡.png */,
+				1B444E2024DAD6C900C1CC36 /* 麦辣鸡腿汉堡.png */,
+				1B444E2124DAD6C900C1CC36 /* 双层深海鳕鱼堡.png */,
+				1B444E2224DAD6C900C1CC36 /* 巨无霸.png */,
+				1B444E2324DAD6C900C1CC36 /* 安格斯厚牛芝士堡.png */,
+				1B444E2424DAD6C900C1CC36 /* 汉堡包.png */,
+				1B444E2524DAD6C900C1CC36 /* 培根蔬萃双层牛堡.png */,
+				1B444E2624DAD6C900C1CC36 /* 安格斯厚牛培根堡.png */,
+				1B444E2724DAD6C900C1CC36 /* 麦香鱼.png */,
+				1B444E2824DAD6C900C1CC36 /* 双层吉士汉堡.png */,
+			);
+			path = BurgerImage;
+			sourceTree = "<group>";
+		};
+		1B444E3624DAF20800C1CC36 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				1B444E3724DAF24200C1CC36 /* NCNavigatorViewController.swift */,
+				1B444E3924DAFAB500C1CC36 /* NCNavigatorFlowLayout.swift */,
+				1B444E3B24DC27F300C1CC36 /* NCNavigatorCell.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
 		83645DF224D927DD00F41618 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,27 +194,6 @@
 			);
 			path = Model;
 			sourceTree = "<group>";
-		};
-		83D11A5524DAA025002C975E /* BurgerImage */ = {
-			isa = PBXGroup;
-			children = (
-				83D11A5624DAA025002C975E /* 吉士汉堡包.png */,
-				83D11A5724DAA025002C975E /* 麦香鸡.png */,
-				83D11A5824DAA025002C975E /* 原味板烧鸡腿堡.png */,
-				83D11A5924DAA025002C975E /* 不素之霸双层牛堡.png */,
-				83D11A5A24DAA025002C975E /* 麦辣鸡腿汉堡.png */,
-				83D11A5B24DAA025002C975E /* 双层深海鳕鱼堡.png */,
-				83D11A5C24DAA025002C975E /* 巨无霸.png */,
-				83D11A5D24DAA025002C975E /* 安格斯厚牛芝士堡.png */,
-				83D11A5E24DAA025002C975E /* 汉堡包.png */,
-				83D11A5F24DAA025002C975E /* 培根蔬萃双层牛堡.png */,
-				83D11A6024DAA025002C975E /* 安格斯厚牛培根堡.png */,
-				83D11A6124DAA025002C975E /* 麦香鱼.png */,
-				83D11A6224DAA025002C975E /* 双层吉士汉堡.png */,
-			);
-			name = BurgerImage;
-			path = "/Users/cm/GitHub_Local/Nutrition-Calculator/Nutrition-Calculator/Nutrition-Calculator/BurgerImage";
-			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -238,23 +254,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83D11A6C24DAA025002C975E /* 培根蔬萃双层牛堡.png in Resources */,
-				83D11A6B24DAA025002C975E /* 汉堡包.png in Resources */,
-				83D11A6424DAA025002C975E /* 麦香鸡.png in Resources */,
-				83D11A6A24DAA025002C975E /* 安格斯厚牛芝士堡.png in Resources */,
-				83D11A6624DAA025002C975E /* 不素之霸双层牛堡.png in Resources */,
-				83D11A6E24DAA025002C975E /* 麦香鱼.png in Resources */,
-				83D11A6824DAA025002C975E /* 双层深海鳕鱼堡.png in Resources */,
-				83D11A6D24DAA025002C975E /* 安格斯厚牛培根堡.png in Resources */,
+				1B444E3224DAD6C900C1CC36 /* 培根蔬萃双层牛堡.png in Resources */,
+				1B444E3124DAD6C900C1CC36 /* 汉堡包.png in Resources */,
+				1B444E2A24DAD6C900C1CC36 /* 麦香鸡.png in Resources */,
+				1B444E3024DAD6C900C1CC36 /* 安格斯厚牛芝士堡.png in Resources */,
+				1B444E2C24DAD6C900C1CC36 /* 不素之霸双层牛堡.png in Resources */,
+				1B444E3424DAD6C900C1CC36 /* 麦香鱼.png in Resources */,
+				1B444E2E24DAD6C900C1CC36 /* 双层深海鳕鱼堡.png in Resources */,
+				1B444E3324DAD6C900C1CC36 /* 安格斯厚牛培根堡.png in Resources */,
 				1B444E0124D508B000C1CC36 /* LaunchScreen.storyboard in Resources */,
 				83C3239024D95056002BA87B /* Menu.plist in Resources */,
-				83D11A6324DAA025002C975E /* 吉士汉堡包.png in Resources */,
-				83D11A6924DAA025002C975E /* 巨无霸.png in Resources */,
+				1B444E2924DAD6C900C1CC36 /* 吉士汉堡包.png in Resources */,
+				1B444E2F24DAD6C900C1CC36 /* 巨无霸.png in Resources */,
 				1B444DFE24D508B000C1CC36 /* Assets.xcassets in Resources */,
-				83D11A6724DAA025002C975E /* 麦辣鸡腿汉堡.png in Resources */,
-				83D11A6524DAA025002C975E /* 原味板烧鸡腿堡.png in Resources */,
+				1B444E2D24DAD6C900C1CC36 /* 麦辣鸡腿汉堡.png in Resources */,
+				1B444E2B24DAD6C900C1CC36 /* 原味板烧鸡腿堡.png in Resources */,
 				1B444DFC24D508AA00C1CC36 /* NutritionCalculator.storyboard in Resources */,
-				83D11A6F24DAA025002C975E /* 双层吉士汉堡.png in Resources */,
+				1B444E3524DAD6C900C1CC36 /* 双层吉士汉堡.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,11 +283,14 @@
 			files = (
 				83645DF824D92D3B00F41618 /* Menu.swift in Sources */,
 				83D11A5224D9675E002C975E /* NCMenuCell.swift in Sources */,
+				1B444E3824DAF24200C1CC36 /* NCNavigatorViewController.swift in Sources */,
+				1B444E3C24DC27F300C1CC36 /* NCNavigatorCell.swift in Sources */,
 				1B444DF924D508AA00C1CC36 /* NCMainViewController.swift in Sources */,
 				1B444E0D24D9961200C1CC36 /* Extension+UIcolor.swift in Sources */,
 				83645DF424D9280500F41618 /* Food.swift in Sources */,
 				83D11A5024D96702002C975E /* NCMenuViewController.swift in Sources */,
 				83645DF624D92A7A00F41618 /* Nutrition.swift in Sources */,
+				1B444E3A24DAFAB500C1CC36 /* NCNavigatorFlowLayout.swift in Sources */,
 				1B444DF524D508AA00C1CC36 /* AppDelegate.swift in Sources */,
 				1B444DF724D508AA00C1CC36 /* SceneDelegate.swift in Sources */,
 				83D11A5424D967FB002C975E /* NCMenuFlowLayout.swift in Sources */,

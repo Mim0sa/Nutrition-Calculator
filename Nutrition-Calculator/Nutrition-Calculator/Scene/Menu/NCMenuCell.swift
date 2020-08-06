@@ -32,9 +32,11 @@ class NCMenuCell: UICollectionViewCell {
         if isChosen {
             layer.borderWidth = 1
             layer.borderColor = UIColor.orange.cgColor
+            subTitle.isHidden = false
         } else {
             layer.borderWidth = 0
             layer.borderColor = UIColor.orange.cgColor
+            subTitle.isHidden = true
         }
         
     }

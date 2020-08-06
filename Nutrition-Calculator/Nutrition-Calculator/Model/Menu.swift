@@ -12,6 +12,16 @@ struct NCMenu {
     
     var menu: [String:[NCFood]]
     
+    var categoryList: [String] {
+        get {
+            var list: [String] = []
+            for category in menu {
+                list.append(category.key)
+            }
+            return list
+        }
+    }
+    
     init(with foods: Set<NCFood>) {
         menu = [:]
         
