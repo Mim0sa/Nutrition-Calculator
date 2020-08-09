@@ -33,12 +33,12 @@ class NCMenuViewController: UIViewController {
 
 extension NCMenuViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return menu?.menu["汉堡"]?.count ?? 0
+        return menu?.menu["小食"]?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuCell", for: indexPath) as! NCMenuCell
-        if let food = menu?.menu["汉堡"]?[indexPath.row] {
+        if let food = menu?.menu["小食"]?[indexPath.row] {
             let description = food.description == "" ? "" : "⚡️" + food.description
             cell.info = (food.name, description, UIImage(named: food.name)!)
             cell.isChosen = chosenFood.contains(food)
@@ -48,7 +48,7 @@ extension NCMenuViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! NCMenuCell
-        if let food = menu?.menu["汉堡"]?[indexPath.row] {
+        if let food = menu?.menu["小食"]?[indexPath.row] {
             
             if cell.isChosen {
                 for i in 0...chosenFood.count - 1 {

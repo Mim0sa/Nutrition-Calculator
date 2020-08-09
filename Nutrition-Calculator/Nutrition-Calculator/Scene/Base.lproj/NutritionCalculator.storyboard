@@ -189,17 +189,17 @@
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzF-WY-SiP">
-                                <rect key="frame" x="0.0" y="270.66666666666669" width="414" height="625.33333333333326"/>
+                                <rect key="frame" x="0.0" y="290.66666666666669" width="414" height="605.33333333333326"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="C8l-mY-In8" kind="embed" identifier="MenuVC" id="FBN-1W-65g"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYY-mA-u0p">
-                                <rect key="frame" x="0.0" y="200.66666666666666" width="414" height="69.999999999999972"/>
+                                <rect key="frame" x="0.0" y="200.66666666666666" width="414" height="89.999999999999972"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="4m2-vW-wSq"/>
+                                    <constraint firstAttribute="height" constant="90" id="4m2-vW-wSq"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="dAO-85-rUT" kind="embed" identifier="NavigatorVC" id="ffY-3r-lha"/>
@@ -239,11 +239,11 @@
             <objects>
                 <viewController id="C8l-mY-In8" customClass="NCMenuViewController" customModule="Nutrition_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="diI-C8-prz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="625.33333333333337"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="605.33333333333337"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Eln-RU-atJ">
-                                <rect key="frame" x="20" y="0.0" width="374" height="625.33333333333337"/>
+                                <rect key="frame" x="20" y="0.0" width="374" height="605.33333333333337"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewLayout key="collectionViewLayout" id="feR-3Z-ZAA" customClass="NCMenuFlowLayout" customModule="Nutrition_Calculator" customModuleProvider="target"/>
                                 <cells>
@@ -316,11 +316,11 @@
             <objects>
                 <viewController id="dAO-85-rUT" customClass="NCNavigatorViewController" customModule="Nutrition_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KMG-HW-0GJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="G8u-09-XTX">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
                                 <color key="backgroundColor" red="0.95585995909999999" green="0.9558214545" blue="0.95583778620000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewLayout key="collectionViewLayout" id="AgC-NI-nXu" customClass="NCNavigatorFlowLayout" customModule="Nutrition_Calculator" customModuleProvider="target"/>
                                 <cells>
