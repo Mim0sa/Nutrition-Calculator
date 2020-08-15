@@ -11,6 +11,7 @@ import UIKit
 class NCMainViewController: UIViewController {
     
     @IBOutlet var nutritionLabels: [UILabel]!
+    @IBOutlet weak var menuContainerView: UIView!
     
     var menu: NCMenu!
     
@@ -52,7 +53,8 @@ extension NCMainViewController: NCMenuViewControllerDelegate, NCNavigatorViewCon
     }
     
     func navigatorViewControllerDidUpdateChosenCategory(_ vc: NCNavigatorViewController, categoryName: String) {
-        
+        let vc = children.first as? NCMenuViewController
+        vc?.currentCategory = categoryName
     }
 }
 

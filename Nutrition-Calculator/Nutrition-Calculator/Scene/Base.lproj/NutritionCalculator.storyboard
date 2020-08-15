@@ -222,6 +222,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="menuContainerView" destination="uzF-WY-SiP" id="wTY-wp-UZx"/>
                         <outletCollection property="nutritionLabels" destination="EFg-vB-nVh" collectionClass="NSMutableArray" id="8jE-c4-e8p"/>
                         <outletCollection property="nutritionLabels" destination="c2E-XQ-ETx" collectionClass="NSMutableArray" id="CtY-dv-PmA"/>
                         <outletCollection property="nutritionLabels" destination="rQZ-5c-XdF" collectionClass="NSMutableArray" id="Q8S-Ev-apj"/>

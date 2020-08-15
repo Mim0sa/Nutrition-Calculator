@@ -16,6 +16,7 @@ class NCMenuFlowLayout: UICollectionViewFlowLayout {
         scrollDirection = .vertical
         minimumLineSpacing = 20
         minimumInteritemSpacing = 20
+        sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
 
         itemSize = CGSize(width: (screenWidth - 4 * 20) / 3, height: (screenWidth - 4 * 20) / 3 * 1.4)
     }

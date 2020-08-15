@@ -47,5 +47,9 @@ extension NCNavigatorViewController: UICollectionViewDelegate, UICollectionViewD
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.navigatorViewControllerDidUpdateChosenCategory(self, categoryName: (menu?.categoryList[indexPath.row])!)
+    }
+    
     
 }

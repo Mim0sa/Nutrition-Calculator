@@ -20,6 +20,10 @@ class NCMenuViewController: UIViewController {
     
     var chosenFood: [NCFood] = []
     
+    var currentCategory: String = "汉堡" {
+        didSet { collectionView.reloadData() }
+    }
+    
     weak var delegate: NCMenuViewControllerDelegate?
     
     override func viewDidLoad() {
@@ -33,12 +37,12 @@ class NCMenuViewController: UIViewController {
 
 extension NCMenuViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return menu?.menu["小食"]?.count ?? 0
+        return menu?.menu[currentCategory]?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuCell", for: indexPath) as! NCMenuCell
-        if let food = menu?.menu["小食"]?[indexPath.row] {
+        if let food = menu?.menu[currentCategory]?[indexPath.row] {
             let description = food.description == "" ? "" : "⚡️" + food.description
             cell.info = (food.name, description, UIImage(named: food.name)!)
             cell.isChosen = chosenFood.contains(food)
@@ -48,7 +52,7 @@ extension NCMenuViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! NCMenuCell
-        if let food = menu?.menu["小食"]?[indexPath.row] {
+        if let food = menu?.menu[currentCategory]?[indexPath.row] {
             
             if cell.isChosen {
                 for i in 0...chosenFood.count - 1 {
