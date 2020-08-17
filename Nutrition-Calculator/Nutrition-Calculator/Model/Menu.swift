@@ -18,7 +18,9 @@ struct NCMenu {
             for category in menu {
                 list.append(category.key)
             }
-            return list
+            return list.sorted { (c1, c2) -> Bool in
+                return NCMenu.categoryOrder.firstIndex(of: c1) ?? 0 < NCMenu.categoryOrder.firstIndex(of: c2) ?? 0
+            }
         }
     }
     
@@ -55,4 +57,6 @@ struct NCMenu {
         }
         return nutritions
     }
+    
+    private static let categoryOrder: [String] = ["汉堡", "小食", "甜品", "饮料", "早餐", "开心乐园餐", "咖啡", "茶饮", "雪冰", "糕点"]
 }

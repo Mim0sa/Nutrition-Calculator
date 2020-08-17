@@ -42,7 +42,7 @@ extension NCNavigatorViewController: UICollectionViewDelegate, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NavigatorCell", for: indexPath) as! NCNavigatorCell
-        cell.image.image = #imageLiteral(resourceName: "不素之霸双层牛堡.png")
+        cell.image.image = UIImage(named: NCNavigatorViewController.categoryImageName[menu?.categoryList[indexPath.row] ?? ""] ?? "")
         cell.title.text = menu?.categoryList[indexPath.row]
         return cell
     }
@@ -51,5 +51,5 @@ extension NCNavigatorViewController: UICollectionViewDelegate, UICollectionViewD
         delegate?.navigatorViewControllerDidUpdateChosenCategory(self, categoryName: (menu?.categoryList[indexPath.row])!)
     }
     
-    
+    static let categoryImageName: [String:String] = ["汉堡":"巨无霸", "小食":"薯条", "甜品":"圆筒冰淇淋", "饮料":"可口可乐"]
 }

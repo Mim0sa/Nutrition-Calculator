@@ -44,7 +44,7 @@ extension NCMenuViewController: UICollectionViewDelegate, UICollectionViewDataSo
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuCell", for: indexPath) as! NCMenuCell
         if let food = menu?.menu[currentCategory]?[indexPath.row] {
             let description = food.description == "" ? "" : "⚡️" + food.description
-            cell.info = (food.name, description, UIImage(named: food.name)!)
+            cell.info = (food.name, description, UIImage(named: food.name) ?? UIImage())
             cell.isChosen = chosenFood.contains(food)
         }
         return cell

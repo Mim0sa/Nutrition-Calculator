@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "双层深海鳕鱼堡.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "双层深海鳕鱼堡@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "双层深海鳕鱼堡@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -261,8 +261,8 @@
                                                         <constraint firstAttribute="width" secondItem="Qax-HM-IXd" secondAttribute="height" multiplier="1:1" id="uAY-QO-3Nx"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="汉堡包" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXZ-Tw-ahQ">
-                                                    <rect key="frame" x="50" y="160.33333333333334" width="40" height="15.666666666666657"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="汉堡包" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="GXZ-Tw-ahQ">
+                                                    <rect key="frame" x="50" y="165.66666666666666" width="40" height="15.666666666666657"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -278,9 +278,11 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="7Nw-pz-VVO" firstAttribute="centerY" secondItem="ADI-69-MEO" secondAttribute="centerY" multiplier="1.8" id="3VK-V5-wYA"/>
+                                            <constraint firstItem="GXZ-Tw-ahQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ADI-69-MEO" secondAttribute="leadingMargin" id="6If-f3-zrf"/>
                                             <constraint firstItem="Qax-HM-IXd" firstAttribute="centerY" secondItem="ADI-69-MEO" secondAttribute="centerY" multiplier="0.8" id="9Tn-tN-Fph"/>
+                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="GXZ-Tw-ahQ" secondAttribute="trailing" id="B0t-n5-swm"/>
                                             <constraint firstItem="GXZ-Tw-ahQ" firstAttribute="centerX" secondItem="ADI-69-MEO" secondAttribute="centerX" id="DjH-Qf-eA2"/>
-                                            <constraint firstItem="GXZ-Tw-ahQ" firstAttribute="centerY" secondItem="ADI-69-MEO" secondAttribute="centerY" multiplier="1.5" id="OQc-o1-oY9"/>
+                                            <constraint firstItem="GXZ-Tw-ahQ" firstAttribute="centerY" secondItem="ADI-69-MEO" secondAttribute="centerY" multiplier="1.55" id="OQc-o1-oY9"/>
                                             <constraint firstItem="Qax-HM-IXd" firstAttribute="width" secondItem="ADI-69-MEO" secondAttribute="width" multiplier="0.885714" id="VsX-tn-GFc"/>
                                             <constraint firstItem="7Nw-pz-VVO" firstAttribute="centerX" secondItem="ADI-69-MEO" secondAttribute="centerX" id="o3F-5F-4TL"/>
                                             <constraint firstItem="Qax-HM-IXd" firstAttribute="centerX" secondItem="ADI-69-MEO" secondAttribute="centerX" id="ub3-lr-bj0"/>
@@ -328,29 +330,29 @@
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NavigatorCell" id="EQ8-76-hHt" customClass="NCNavigatorCell" customModule="Nutrition_Calculator" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="66" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xfJ-9F-pV6">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="z2x-FU-mV3">
                                             <rect key="frame" x="0.0" y="0.0" width="66" height="66"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="汉堡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIk-1v-qmD">
                                                     <rect key="frame" x="22.666666666666664" y="49" width="20.666666666666664" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="汉堡包.png" translatesAutoresizingMaskIntoConstraints="NO" id="9zI-0u-flw">
-                                                    <rect key="frame" x="8" y="0.0" width="50" height="50"/>
+                                                    <rect key="frame" x="12" y="4" width="42" height="42"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="50" id="VC9-ND-2LS"/>
+                                                        <constraint firstAttribute="width" constant="42" id="VC9-ND-2LS"/>
                                                         <constraint firstAttribute="width" secondItem="9zI-0u-flw" secondAttribute="height" multiplier="1:1" id="w8O-Ub-axr"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="9zI-0u-flw" firstAttribute="top" secondItem="xfJ-9F-pV6" secondAttribute="top" id="OXQ-Oc-c4G"/>
+                                                <constraint firstItem="9zI-0u-flw" firstAttribute="top" secondItem="z2x-FU-mV3" secondAttribute="top" constant="4" id="OXQ-Oc-c4G"/>
                                                 <constraint firstAttribute="bottom" secondItem="VIk-1v-qmD" secondAttribute="bottom" constant="5" id="TIt-EV-fCx"/>
-                                                <constraint firstItem="VIk-1v-qmD" firstAttribute="centerX" secondItem="xfJ-9F-pV6" secondAttribute="centerX" id="igr-my-dBq"/>
-                                                <constraint firstItem="9zI-0u-flw" firstAttribute="centerX" secondItem="xfJ-9F-pV6" secondAttribute="centerX" id="qSr-Ec-xms"/>
+                                                <constraint firstItem="VIk-1v-qmD" firstAttribute="centerX" secondItem="z2x-FU-mV3" secondAttribute="centerX" id="igr-my-dBq"/>
+                                                <constraint firstItem="9zI-0u-flw" firstAttribute="centerX" secondItem="z2x-FU-mV3" secondAttribute="centerX" id="qSr-Ec-xms"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="66" height="66"/>

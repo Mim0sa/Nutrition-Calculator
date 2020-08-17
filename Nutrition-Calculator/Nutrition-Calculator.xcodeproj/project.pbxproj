@@ -14,36 +14,9 @@
 		1B444DFE24D508B000C1CC36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B444DFD24D508B000C1CC36 /* Assets.xcassets */; };
 		1B444E0124D508B000C1CC36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B444DFF24D508B000C1CC36 /* LaunchScreen.storyboard */; };
 		1B444E0D24D9961200C1CC36 /* Extension+UIcolor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B444E0C24D9961200C1CC36 /* Extension+UIcolor.swift */; };
-		1B444E2924DAD6C900C1CC36 /* 吉士汉堡包.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E1C24DAD6C900C1CC36 /* 吉士汉堡包.png */; };
-		1B444E2A24DAD6C900C1CC36 /* 麦香鸡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E1D24DAD6C900C1CC36 /* 麦香鸡.png */; };
-		1B444E2B24DAD6C900C1CC36 /* 原味板烧鸡腿堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E1E24DAD6C900C1CC36 /* 原味板烧鸡腿堡.png */; };
-		1B444E2C24DAD6C900C1CC36 /* 不素之霸双层牛堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E1F24DAD6C900C1CC36 /* 不素之霸双层牛堡.png */; };
-		1B444E2D24DAD6C900C1CC36 /* 麦辣鸡腿汉堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2024DAD6C900C1CC36 /* 麦辣鸡腿汉堡.png */; };
-		1B444E2E24DAD6C900C1CC36 /* 双层深海鳕鱼堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2124DAD6C900C1CC36 /* 双层深海鳕鱼堡.png */; };
-		1B444E2F24DAD6C900C1CC36 /* 巨无霸.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2224DAD6C900C1CC36 /* 巨无霸.png */; };
-		1B444E3024DAD6C900C1CC36 /* 安格斯厚牛芝士堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2324DAD6C900C1CC36 /* 安格斯厚牛芝士堡.png */; };
-		1B444E3124DAD6C900C1CC36 /* 汉堡包.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2424DAD6C900C1CC36 /* 汉堡包.png */; };
-		1B444E3224DAD6C900C1CC36 /* 培根蔬萃双层牛堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2524DAD6C900C1CC36 /* 培根蔬萃双层牛堡.png */; };
-		1B444E3324DAD6C900C1CC36 /* 安格斯厚牛培根堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2624DAD6C900C1CC36 /* 安格斯厚牛培根堡.png */; };
-		1B444E3424DAD6C900C1CC36 /* 麦香鱼.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2724DAD6C900C1CC36 /* 麦香鱼.png */; };
-		1B444E3524DAD6C900C1CC36 /* 双层吉士汉堡.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B444E2824DAD6C900C1CC36 /* 双层吉士汉堡.png */; };
 		1B444E3824DAF24200C1CC36 /* NCNavigatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B444E3724DAF24200C1CC36 /* NCNavigatorViewController.swift */; };
 		1B444E3A24DAFAB500C1CC36 /* NCNavigatorFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B444E3924DAFAB500C1CC36 /* NCNavigatorFlowLayout.swift */; };
 		1B444E3C24DC27F300C1CC36 /* NCNavigatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B444E3B24DC27F300C1CC36 /* NCNavigatorCell.swift */; };
-		1B78E36A24DFB32F00E5BBE1 /* 苹果片.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B78E36324DFB32E00E5BBE1 /* 苹果片.png */; };
-		1B78E36B24DFB32F00E5BBE1 /* 麦乐鸡(5块).png in Resources */ = {isa = PBXBuildFile; fileRef = 1B78E36424DFB32E00E5BBE1 /* 麦乐鸡(5块).png */; };
-		1B78E36C24DFB32F00E5BBE1 /* 玉米杯.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B78E36524DFB32E00E5BBE1 /* 玉米杯.png */; };
-		1B78E36D24DFB32F00E5BBE1 /* 美味鲜蔬杯.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B78E36624DFB32E00E5BBE1 /* 美味鲜蔬杯.png */; };
-		1B78E36E24DFB32F00E5BBE1 /* 薯条.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B78E36724DFB32F00E5BBE1 /* 薯条.png */; };
-		1B78E36F24DFB32F00E5BBE1 /* 那么大鸡排.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B78E36824DFB32F00E5BBE1 /* 那么大鸡排.png */; };
-		1B78E37024DFB32F00E5BBE1 /* 麦辣鸡翅.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B78E36924DFB32F00E5BBE1 /* 麦辣鸡翅.png */; };
-		835146B224E62F1700BB25A1 /* 朱古力新地.png in Resources */ = {isa = PBXBuildFile; fileRef = 835146AB24E62F1700BB25A1 /* 朱古力新地.png */; };
-		835146B324E62F1700BB25A1 /* 草莓新地.png in Resources */ = {isa = PBXBuildFile; fileRef = 835146AC24E62F1700BB25A1 /* 草莓新地.png */; };
-		835146B424E62F1700BB25A1 /* 麦旋风 奥利奥原味.png in Resources */ = {isa = PBXBuildFile; fileRef = 835146AD24E62F1700BB25A1 /* 麦旋风 奥利奥原味.png */; };
-		835146B524E62F1700BB25A1 /* 香芋派.png in Resources */ = {isa = PBXBuildFile; fileRef = 835146AE24E62F1700BB25A1 /* 香芋派.png */; };
-		835146B624E62F1700BB25A1 /* 圆筒冰淇淋.png in Resources */ = {isa = PBXBuildFile; fileRef = 835146AF24E62F1700BB25A1 /* 圆筒冰淇淋.png */; };
-		835146B724E62F1700BB25A1 /* 菠萝派.png in Resources */ = {isa = PBXBuildFile; fileRef = 835146B024E62F1700BB25A1 /* 菠萝派.png */; };
-		835146B824E62F1700BB25A1 /* 麦旋风 奥利奥草莓.png in Resources */ = {isa = PBXBuildFile; fileRef = 835146B124E62F1700BB25A1 /* 麦旋风 奥利奥草莓.png */; };
 		83645DF424D9280500F41618 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83645DF324D9280500F41618 /* Food.swift */; };
 		83645DF624D92A7A00F41618 /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83645DF524D92A7A00F41618 /* Nutrition.swift */; };
 		83645DF824D92D3B00F41618 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83645DF724D92D3B00F41618 /* Menu.swift */; };
@@ -63,36 +36,9 @@
 		1B444E0024D508B000C1CC36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B444E0224D508B000C1CC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B444E0C24D9961200C1CC36 /* Extension+UIcolor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIcolor.swift"; sourceTree = "<group>"; };
-		1B444E1C24DAD6C900C1CC36 /* 吉士汉堡包.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "吉士汉堡包.png"; sourceTree = "<group>"; };
-		1B444E1D24DAD6C900C1CC36 /* 麦香鸡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦香鸡.png"; sourceTree = "<group>"; };
-		1B444E1E24DAD6C900C1CC36 /* 原味板烧鸡腿堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "原味板烧鸡腿堡.png"; sourceTree = "<group>"; };
-		1B444E1F24DAD6C900C1CC36 /* 不素之霸双层牛堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "不素之霸双层牛堡.png"; sourceTree = "<group>"; };
-		1B444E2024DAD6C900C1CC36 /* 麦辣鸡腿汉堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦辣鸡腿汉堡.png"; sourceTree = "<group>"; };
-		1B444E2124DAD6C900C1CC36 /* 双层深海鳕鱼堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "双层深海鳕鱼堡.png"; sourceTree = "<group>"; };
-		1B444E2224DAD6C900C1CC36 /* 巨无霸.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "巨无霸.png"; sourceTree = "<group>"; };
-		1B444E2324DAD6C900C1CC36 /* 安格斯厚牛芝士堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "安格斯厚牛芝士堡.png"; sourceTree = "<group>"; };
-		1B444E2424DAD6C900C1CC36 /* 汉堡包.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "汉堡包.png"; sourceTree = "<group>"; };
-		1B444E2524DAD6C900C1CC36 /* 培根蔬萃双层牛堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "培根蔬萃双层牛堡.png"; sourceTree = "<group>"; };
-		1B444E2624DAD6C900C1CC36 /* 安格斯厚牛培根堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "安格斯厚牛培根堡.png"; sourceTree = "<group>"; };
-		1B444E2724DAD6C900C1CC36 /* 麦香鱼.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦香鱼.png"; sourceTree = "<group>"; };
-		1B444E2824DAD6C900C1CC36 /* 双层吉士汉堡.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "双层吉士汉堡.png"; sourceTree = "<group>"; };
 		1B444E3724DAF24200C1CC36 /* NCNavigatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCNavigatorViewController.swift; sourceTree = "<group>"; };
 		1B444E3924DAFAB500C1CC36 /* NCNavigatorFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCNavigatorFlowLayout.swift; sourceTree = "<group>"; };
 		1B444E3B24DC27F300C1CC36 /* NCNavigatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCNavigatorCell.swift; sourceTree = "<group>"; };
-		1B78E36324DFB32E00E5BBE1 /* 苹果片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "苹果片.png"; sourceTree = "<group>"; };
-		1B78E36424DFB32E00E5BBE1 /* 麦乐鸡(5块).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦乐鸡(5块).png"; sourceTree = "<group>"; };
-		1B78E36524DFB32E00E5BBE1 /* 玉米杯.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "玉米杯.png"; sourceTree = "<group>"; };
-		1B78E36624DFB32E00E5BBE1 /* 美味鲜蔬杯.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "美味鲜蔬杯.png"; sourceTree = "<group>"; };
-		1B78E36724DFB32F00E5BBE1 /* 薯条.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "薯条.png"; sourceTree = "<group>"; };
-		1B78E36824DFB32F00E5BBE1 /* 那么大鸡排.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "那么大鸡排.png"; sourceTree = "<group>"; };
-		1B78E36924DFB32F00E5BBE1 /* 麦辣鸡翅.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦辣鸡翅.png"; sourceTree = "<group>"; };
-		835146AB24E62F1700BB25A1 /* 朱古力新地.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "朱古力新地.png"; sourceTree = "<group>"; };
-		835146AC24E62F1700BB25A1 /* 草莓新地.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "草莓新地.png"; sourceTree = "<group>"; };
-		835146AD24E62F1700BB25A1 /* 麦旋风 奥利奥原味.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦旋风 奥利奥原味.png"; sourceTree = "<group>"; };
-		835146AE24E62F1700BB25A1 /* 香芋派.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "香芋派.png"; sourceTree = "<group>"; };
-		835146AF24E62F1700BB25A1 /* 圆筒冰淇淋.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "圆筒冰淇淋.png"; sourceTree = "<group>"; };
-		835146B024E62F1700BB25A1 /* 菠萝派.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "菠萝派.png"; sourceTree = "<group>"; };
-		835146B124E62F1700BB25A1 /* 麦旋风 奥利奥草莓.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "麦旋风 奥利奥草莓.png"; sourceTree = "<group>"; };
 		83645DF324D9280500F41618 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		83645DF524D92A7A00F41618 /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
 		83645DF724D92D3B00F41618 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
@@ -134,7 +80,6 @@
 			children = (
 				1B444E0224D508B000C1CC36 /* Info.plist */,
 				1B444DFD24D508B000C1CC36 /* Assets.xcassets */,
-				1B444E1B24DAD6C900C1CC36 /* Images */,
 				1B444E0924D509B100C1CC36 /* Scene */,
 				83645DF224D927DD00F41618 /* Model */,
 				1B444E0824D5099400C1CC36 /* Support */,
@@ -182,16 +127,6 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
-		1B444E1B24DAD6C900C1CC36 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				835146BB24E6314800BB25A1 /* 汉堡 */,
-				835146BA24E6313600BB25A1 /* 小食 */,
-				835146B924E6311500BB25A1 /* 甜品 */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
 		1B444E3624DAF20800C1CC36 /* Navigator */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,54 +135,6 @@
 				1B444E3B24DC27F300C1CC36 /* NCNavigatorCell.swift */,
 			);
 			path = Navigator;
-			sourceTree = "<group>";
-		};
-		835146B924E6311500BB25A1 /* 甜品 */ = {
-			isa = PBXGroup;
-			children = (
-				835146B024E62F1700BB25A1 /* 菠萝派.png */,
-				835146AC24E62F1700BB25A1 /* 草莓新地.png */,
-				835146B124E62F1700BB25A1 /* 麦旋风 奥利奥草莓.png */,
-				835146AD24E62F1700BB25A1 /* 麦旋风 奥利奥原味.png */,
-				835146AE24E62F1700BB25A1 /* 香芋派.png */,
-				835146AF24E62F1700BB25A1 /* 圆筒冰淇淋.png */,
-				835146AB24E62F1700BB25A1 /* 朱古力新地.png */,
-			);
-			path = "甜品";
-			sourceTree = "<group>";
-		};
-		835146BA24E6313600BB25A1 /* 小食 */ = {
-			isa = PBXGroup;
-			children = (
-				1B78E36924DFB32F00E5BBE1 /* 麦辣鸡翅.png */,
-				1B78E36424DFB32E00E5BBE1 /* 麦乐鸡(5块).png */,
-				1B78E36624DFB32E00E5BBE1 /* 美味鲜蔬杯.png */,
-				1B78E36824DFB32F00E5BBE1 /* 那么大鸡排.png */,
-				1B78E36324DFB32E00E5BBE1 /* 苹果片.png */,
-				1B78E36724DFB32F00E5BBE1 /* 薯条.png */,
-				1B78E36524DFB32E00E5BBE1 /* 玉米杯.png */,
-			);
-			path = "小食";
-			sourceTree = "<group>";
-		};
-		835146BB24E6314800BB25A1 /* 汉堡 */ = {
-			isa = PBXGroup;
-			children = (
-				1B444E1C24DAD6C900C1CC36 /* 吉士汉堡包.png */,
-				1B444E1D24DAD6C900C1CC36 /* 麦香鸡.png */,
-				1B444E1E24DAD6C900C1CC36 /* 原味板烧鸡腿堡.png */,
-				1B444E1F24DAD6C900C1CC36 /* 不素之霸双层牛堡.png */,
-				1B444E2024DAD6C900C1CC36 /* 麦辣鸡腿汉堡.png */,
-				1B444E2124DAD6C900C1CC36 /* 双层深海鳕鱼堡.png */,
-				1B444E2224DAD6C900C1CC36 /* 巨无霸.png */,
-				1B444E2324DAD6C900C1CC36 /* 安格斯厚牛芝士堡.png */,
-				1B444E2424DAD6C900C1CC36 /* 汉堡包.png */,
-				1B444E2524DAD6C900C1CC36 /* 培根蔬萃双层牛堡.png */,
-				1B444E2624DAD6C900C1CC36 /* 安格斯厚牛培根堡.png */,
-				1B444E2724DAD6C900C1CC36 /* 麦香鱼.png */,
-				1B444E2824DAD6C900C1CC36 /* 双层吉士汉堡.png */,
-			);
-			path = "汉堡";
 			sourceTree = "<group>";
 		};
 		83645DF224D927DD00F41618 /* Model */ = {
@@ -320,37 +207,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B444E3224DAD6C900C1CC36 /* 培根蔬萃双层牛堡.png in Resources */,
-				1B444E3124DAD6C900C1CC36 /* 汉堡包.png in Resources */,
-				835146B424E62F1700BB25A1 /* 麦旋风 奥利奥原味.png in Resources */,
-				835146B824E62F1700BB25A1 /* 麦旋风 奥利奥草莓.png in Resources */,
-				1B444E2A24DAD6C900C1CC36 /* 麦香鸡.png in Resources */,
-				1B78E36D24DFB32F00E5BBE1 /* 美味鲜蔬杯.png in Resources */,
-				1B444E3024DAD6C900C1CC36 /* 安格斯厚牛芝士堡.png in Resources */,
-				1B444E2C24DAD6C900C1CC36 /* 不素之霸双层牛堡.png in Resources */,
-				1B444E3424DAD6C900C1CC36 /* 麦香鱼.png in Resources */,
-				1B78E36B24DFB32F00E5BBE1 /* 麦乐鸡(5块).png in Resources */,
-				1B444E2E24DAD6C900C1CC36 /* 双层深海鳕鱼堡.png in Resources */,
-				1B444E3324DAD6C900C1CC36 /* 安格斯厚牛培根堡.png in Resources */,
-				835146B624E62F1700BB25A1 /* 圆筒冰淇淋.png in Resources */,
-				1B78E37024DFB32F00E5BBE1 /* 麦辣鸡翅.png in Resources */,
 				1B444E0124D508B000C1CC36 /* LaunchScreen.storyboard in Resources */,
 				83C3239024D95056002BA87B /* Menu.plist in Resources */,
-				1B444E2924DAD6C900C1CC36 /* 吉士汉堡包.png in Resources */,
-				835146B224E62F1700BB25A1 /* 朱古力新地.png in Resources */,
-				1B444E2F24DAD6C900C1CC36 /* 巨无霸.png in Resources */,
-				1B78E36A24DFB32F00E5BBE1 /* 苹果片.png in Resources */,
-				1B78E36E24DFB32F00E5BBE1 /* 薯条.png in Resources */,
 				1B444DFE24D508B000C1CC36 /* Assets.xcassets in Resources */,
-				835146B524E62F1700BB25A1 /* 香芋派.png in Resources */,
-				835146B324E62F1700BB25A1 /* 草莓新地.png in Resources */,
-				1B444E2D24DAD6C900C1CC36 /* 麦辣鸡腿汉堡.png in Resources */,
-				1B444E2B24DAD6C900C1CC36 /* 原味板烧鸡腿堡.png in Resources */,
-				1B78E36F24DFB32F00E5BBE1 /* 那么大鸡排.png in Resources */,
-				1B78E36C24DFB32F00E5BBE1 /* 玉米杯.png in Resources */,
-				835146B724E62F1700BB25A1 /* 菠萝派.png in Resources */,
 				1B444DFC24D508AA00C1CC36 /* NutritionCalculator.storyboard in Resources */,
-				1B444E3524DAD6C900C1CC36 /* 双层吉士汉堡.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
