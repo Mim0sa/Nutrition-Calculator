@@ -44,6 +44,8 @@ extension NCNavigatorViewController: UICollectionViewDelegate, UICollectionViewD
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NavigatorCell", for: indexPath) as! NCNavigatorCell
         cell.image.image = UIImage(named: NCNavigatorViewController.categoryImageName[menu?.categoryList[indexPath.row] ?? ""] ?? "")
         cell.title.text = menu?.categoryList[indexPath.row]
+        if cell.title.text == currentCategory { cell.isChosen = true } else { cell.isChosen = false }
+        //cell.backgroundColor = .randomColor
         return cell
     }
     

@@ -177,7 +177,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.97970253230000004" green="0.73620045190000005" blue="0.057731889190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.73725490196078436" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="mc6-j1-0Rx" firstAttribute="top" secondItem="vAQ-fN-bwm" secondAttribute="topMargin" constant="15" id="263-VC-0ug"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mc6-j1-0Rx" secondAttribute="trailing" constant="20" symbolic="YES" id="2hA-A9-VE2"/>
@@ -334,6 +334,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="66" height="66"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCm-qf-6KE">
+                                                    <rect key="frame" x="9" y="0.0" width="48" height="48"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="330-Qd-Jfp"/>
+                                                        <constraint firstAttribute="width" constant="48" id="me0-jQ-sDT"/>
+                                                    </constraints>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="汉堡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIk-1v-qmD">
                                                     <rect key="frame" x="22.666666666666664" y="49" width="20.666666666666664" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -349,14 +357,17 @@
                                                 </imageView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="vCm-qf-6KE" firstAttribute="top" secondItem="z2x-FU-mV3" secondAttribute="top" id="Iap-A3-9l2"/>
                                                 <constraint firstItem="9zI-0u-flw" firstAttribute="top" secondItem="z2x-FU-mV3" secondAttribute="top" constant="4" id="OXQ-Oc-c4G"/>
                                                 <constraint firstAttribute="bottom" secondItem="VIk-1v-qmD" secondAttribute="bottom" constant="5" id="TIt-EV-fCx"/>
+                                                <constraint firstItem="vCm-qf-6KE" firstAttribute="centerX" secondItem="z2x-FU-mV3" secondAttribute="centerX" id="WAL-sg-q9H"/>
                                                 <constraint firstItem="VIk-1v-qmD" firstAttribute="centerX" secondItem="z2x-FU-mV3" secondAttribute="centerX" id="igr-my-dBq"/>
                                                 <constraint firstItem="9zI-0u-flw" firstAttribute="centerX" secondItem="z2x-FU-mV3" secondAttribute="centerX" id="qSr-Ec-xms"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="66" height="66"/>
                                         <connections>
+                                            <outlet property="gradientView" destination="vCm-qf-6KE" id="P5y-Q3-lPz"/>
                                             <outlet property="image" destination="9zI-0u-flw" id="Q1F-6T-GPW"/>
                                             <outlet property="title" destination="VIk-1v-qmD" id="6iW-MX-uuO"/>
                                         </connections>

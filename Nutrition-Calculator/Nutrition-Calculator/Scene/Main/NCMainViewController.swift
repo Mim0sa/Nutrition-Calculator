@@ -13,6 +13,9 @@ class NCMainViewController: UIViewController {
     @IBOutlet var nutritionLabels: [UILabel]!
     @IBOutlet weak var menuContainerView: UIView!
     
+    var navigatorVC: NCNavigatorViewController?
+    var menuVC: NCMenuViewController?
+    
     var menu: NCMenu!
     
     override func awakeFromNib() {
@@ -28,15 +31,17 @@ class NCMainViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier else { return }
+        
         if identifier == "MenuVC" {
             guard let menuVC = segue.destination as? NCMenuViewController else { fatalError() }
+            self.menuVC = menuVC
             menuVC.delegate = self
             menuVC.menu = menu
-        }
-        if identifier == "NavigatorVC" {
-            guard let menuVC = segue.destination as? NCNavigatorViewController else { fatalError() }
-            menuVC.delegate = self
-            menuVC.menu = menu
+        } else if identifier == "NavigatorVC" {
+            guard let navigatorVC = segue.destination as? NCNavigatorViewController else { fatalError() }
+            self.navigatorVC = navigatorVC
+            navigatorVC.delegate = self
+            navigatorVC.menu = menu
         }
     }
 }
@@ -53,8 +58,8 @@ extension NCMainViewController: NCMenuViewControllerDelegate, NCNavigatorViewCon
     }
     
     func navigatorViewControllerDidUpdateChosenCategory(_ vc: NCNavigatorViewController, categoryName: String) {
-        let vc = children.first as? NCMenuViewController
-        vc?.currentCategory = categoryName
+        menuVC?.currentCategory = categoryName
+        vc.currentCategory = categoryName
     }
 }
 
