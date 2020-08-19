@@ -288,6 +288,17 @@
                                             <constraint firstItem="Qax-HM-IXd" firstAttribute="centerX" secondItem="ADI-69-MEO" secondAttribute="centerX" id="ub3-lr-bj0"/>
                                         </constraints>
                                         <size key="customSize" width="140" height="224"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorWithUIColor">
+                                                <color key="value" red="0.98039215686274506" green="0.73725490196078436" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="image" destination="Qax-HM-IXd" id="WbN-3g-iko"/>
                                             <outlet property="subTitle" destination="7Nw-pz-VVO" id="xuJ-67-hbB"/>

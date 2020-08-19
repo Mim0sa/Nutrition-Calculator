@@ -31,14 +31,18 @@ class NCMenuCell: UICollectionViewCell {
     func updateBorder(with isChosen: Bool) {
         if isChosen {
             layer.borderWidth = 1
-            layer.borderColor = UIColor.orange.cgColor
             subTitle.isHidden = false
         } else {
             layer.borderWidth = 0
-            layer.borderColor = UIColor.orange.cgColor
             subTitle.isHidden = true
         }
-        
     }
     
+}
+
+extension CALayer {
+    @IBInspectable var borderColorWithUIColor: UIColor {
+        set { borderColor = newValue.cgColor }
+        get { return UIColor(cgColor: borderColor!) }
+    }
 }

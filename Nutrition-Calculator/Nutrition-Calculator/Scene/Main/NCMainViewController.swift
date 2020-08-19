@@ -13,8 +13,8 @@ class NCMainViewController: UIViewController {
     @IBOutlet var nutritionLabels: [UILabel]!
     @IBOutlet weak var menuContainerView: UIView!
     
-    var navigatorVC: NCNavigatorViewController?
-    var menuVC: NCMenuViewController?
+    var navigatorController: NCNavigatorViewController!
+    var menuController: NCMenuViewController!
     
     var menu: NCMenu!
     
@@ -34,12 +34,12 @@ class NCMainViewController: UIViewController {
         
         if identifier == "MenuVC" {
             guard let menuVC = segue.destination as? NCMenuViewController else { fatalError() }
-            self.menuVC = menuVC
+            menuController = menuVC
             menuVC.delegate = self
             menuVC.menu = menu
         } else if identifier == "NavigatorVC" {
             guard let navigatorVC = segue.destination as? NCNavigatorViewController else { fatalError() }
-            self.navigatorVC = navigatorVC
+            navigatorController = navigatorVC
             navigatorVC.delegate = self
             navigatorVC.menu = menu
         }
@@ -58,7 +58,7 @@ extension NCMainViewController: NCMenuViewControllerDelegate, NCNavigatorViewCon
     }
     
     func navigatorViewControllerDidUpdateChosenCategory(_ vc: NCNavigatorViewController, categoryName: String) {
-        menuVC?.currentCategory = categoryName
+        menuController.currentCategory = categoryName
         vc.currentCategory = categoryName
     }
 }
