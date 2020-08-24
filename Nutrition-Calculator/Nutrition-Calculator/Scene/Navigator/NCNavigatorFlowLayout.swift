@@ -14,7 +14,7 @@ class NCNavigatorFlowLayout: UICollectionViewFlowLayout {
         super.init(coder: coder)
         
         scrollDirection = .horizontal
-        minimumLineSpacing = 10
+        minimumLineSpacing = 4
         minimumInteritemSpacing = 20
         sectionInset = UIEdgeInsets(top: 5, left: 25, bottom: 0, right: 25)
 

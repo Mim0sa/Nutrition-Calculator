@@ -20,6 +20,7 @@
 		83645DF424D9280500F41618 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83645DF324D9280500F41618 /* Food.swift */; };
 		83645DF624D92A7A00F41618 /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83645DF524D92A7A00F41618 /* Nutrition.swift */; };
 		83645DF824D92D3B00F41618 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83645DF724D92D3B00F41618 /* Menu.swift */; };
+		839DC43924F3B4EA005955E4 /* NCListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DC43824F3B4EA005955E4 /* NCListViewController.swift */; };
 		83C3239024D95056002BA87B /* Menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83C3238F24D95056002BA87B /* Menu.plist */; };
 		83D11A5024D96702002C975E /* NCMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D11A4F24D96702002C975E /* NCMenuViewController.swift */; };
 		83D11A5224D9675E002C975E /* NCMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D11A5124D9675E002C975E /* NCMenuCell.swift */; };
@@ -42,6 +43,7 @@
 		83645DF324D9280500F41618 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		83645DF524D92A7A00F41618 /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
 		83645DF724D92D3B00F41618 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		839DC43824F3B4EA005955E4 /* NCListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCListViewController.swift; sourceTree = "<group>"; };
 		83C3238F24D95056002BA87B /* Menu.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Menu.plist; sourceTree = "<group>"; };
 		83D11A4F24D96702002C975E /* NCMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCMenuViewController.swift; sourceTree = "<group>"; };
 		83D11A5124D9675E002C975E /* NCMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCMenuCell.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				1B444E0A24D992B300C1CC36 /* Main */,
 				1B444E0B24D992C000C1CC36 /* Menu */,
 				1B444E3624DAF20800C1CC36 /* Navigator */,
+				839DC43724F3B494005955E4 /* List */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -146,6 +149,14 @@
 				83C3238F24D95056002BA87B /* Menu.plist */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		839DC43724F3B494005955E4 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				839DC43824F3B4EA005955E4 /* NCListViewController.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +243,7 @@
 				83645DF624D92A7A00F41618 /* Nutrition.swift in Sources */,
 				1B444E3A24DAFAB500C1CC36 /* NCNavigatorFlowLayout.swift in Sources */,
 				1B444DF524D508AA00C1CC36 /* AppDelegate.swift in Sources */,
+				839DC43924F3B4EA005955E4 /* NCListViewController.swift in Sources */,
 				1B444DF724D508AA00C1CC36 /* SceneDelegate.swift in Sources */,
 				83D11A5424D967FB002C975E /* NCMenuFlowLayout.swift in Sources */,
 			);

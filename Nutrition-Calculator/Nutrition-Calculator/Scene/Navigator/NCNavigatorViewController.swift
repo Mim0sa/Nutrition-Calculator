@@ -10,6 +10,7 @@ import UIKit
 
 protocol NCNavigatorViewControllerDelegate: class {
     func navigatorViewControllerDidUpdateChosenCategory(_ vc: NCNavigatorViewController, categoryName: String)
+    func navigatorViewControllerDidClickListButton(_ vc: NCNavigatorViewController)
 }
 
 class NCNavigatorViewController: UIViewController {
@@ -32,7 +33,11 @@ class NCNavigatorViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
     }
-
+    
+    @IBAction func listButtonDidClick(_ sender: UIButton) {
+        delegate?.navigatorViewControllerDidClickListButton(self)
+    }
+    
 }
 
 extension NCNavigatorViewController: UICollectionViewDelegate, UICollectionViewDataSource {

@@ -222,7 +222,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="menuContainerView" destination="uzF-WY-SiP" id="wTY-wp-UZx"/>
+                        <outlet property="nutritionLabelsContainer" destination="vAQ-fN-bwm" id="p99-GA-C8i"/>
                         <outletCollection property="nutritionLabels" destination="EFg-vB-nVh" collectionClass="NSMutableArray" id="8jE-c4-e8p"/>
                         <outletCollection property="nutritionLabels" destination="c2E-XQ-ETx" collectionClass="NSMutableArray" id="CtY-dv-PmA"/>
                         <outletCollection property="nutritionLabels" destination="rQZ-5c-XdF" collectionClass="NSMutableArray" id="Q8S-Ev-apj"/>
@@ -308,7 +308,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="0.95677906270000002" green="0.95691639179999999" blue="0.95674914119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Eln-RU-atJ" secondAttribute="trailing" constant="20" id="7Ei-FO-GXE"/>
                             <constraint firstItem="Eln-RU-atJ" firstAttribute="top" secondItem="diI-C8-prz" secondAttribute="top" id="DxF-dk-16e"/>
@@ -325,6 +325,21 @@
             </objects>
             <point key="canvasLocation" x="290" y="151"/>
         </scene>
+        <!--List View Controller-->
+        <scene sceneID="HxZ-1T-Dq5">
+            <objects>
+                <viewController storyboardIdentifier="ListVC" id="65m-gM-0Ge" customClass="NCListViewController" customModule="Nutrition_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pwQ-1F-Kxi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.73725490196078436" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="sET-sl-9SH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rup-tA-Jul" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="52"/>
+        </scene>
         <!--Navigator View Controller-->
         <scene sceneID="Thc-ka-bTW">
             <objects>
@@ -334,8 +349,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="G8u-09-XTX">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
-                                <color key="backgroundColor" red="0.95585995909999999" green="0.9558214545" blue="0.95583778620000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="0.0" y="0.0" width="346" height="86"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewLayout key="collectionViewLayout" id="AgC-NI-nXu" customClass="NCNavigatorFlowLayout" customModule="Nutrition_Calculator" customModuleProvider="target"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NavigatorCell" id="EQ8-76-hHt" customClass="NCNavigatorCell" customModule="Nutrition_Calculator" customModuleProvider="target">
@@ -385,12 +400,24 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABG-Rk-C6p">
+                                <rect key="frame" x="348" y="0.0" width="66" height="88"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="Burger"/>
+                                <connections>
+                                    <action selector="listButtonDidClick:" destination="dAO-85-rUT" eventType="touchUpInside" id="daR-7t-9gO"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="G8u-09-XTX" firstAttribute="top" secondItem="KMG-HW-0GJ" secondAttribute="top" id="0zy-Kt-xUt"/>
-                            <constraint firstAttribute="trailing" secondItem="G8u-09-XTX" secondAttribute="trailing" id="7cA-Yw-Jeb"/>
+                            <constraint firstAttribute="trailing" secondItem="G8u-09-XTX" secondAttribute="trailing" constant="68" id="7cA-Yw-Jeb"/>
                             <constraint firstAttribute="bottom" secondItem="G8u-09-XTX" secondAttribute="bottom" constant="4" id="GdT-Qt-WDc"/>
+                            <constraint firstItem="ABG-Rk-C6p" firstAttribute="leading" secondItem="G8u-09-XTX" secondAttribute="trailing" constant="2" id="Lr4-jT-H4s"/>
+                            <constraint firstItem="ABG-Rk-C6p" firstAttribute="top" secondItem="KMG-HW-0GJ" secondAttribute="top" id="Opx-uU-ze9"/>
+                            <constraint firstItem="1iY-ac-oQ3" firstAttribute="bottom" secondItem="ABG-Rk-C6p" secondAttribute="bottom" constant="2" id="hOv-tD-fye"/>
+                            <constraint firstItem="1iY-ac-oQ3" firstAttribute="trailing" secondItem="ABG-Rk-C6p" secondAttribute="trailing" id="nyg-ao-KNk"/>
                             <constraint firstItem="G8u-09-XTX" firstAttribute="leading" secondItem="KMG-HW-0GJ" secondAttribute="leading" id="vBo-FA-Mv2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1iY-ac-oQ3"/>
@@ -405,6 +432,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Burger" width="53.333332061767578" height="40"/>
         <image name="汉堡包.png" width="640" height="640"/>
     </resources>
 </document>

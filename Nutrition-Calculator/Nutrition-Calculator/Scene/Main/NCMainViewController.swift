@@ -11,7 +11,7 @@ import UIKit
 class NCMainViewController: UIViewController {
     
     @IBOutlet var nutritionLabels: [UILabel]!
-    @IBOutlet weak var menuContainerView: UIView!
+    @IBOutlet weak var nutritionLabelsContainer: UIView!
     
     var navigatorController: NCNavigatorViewController!
     var menuController: NCMenuViewController!
@@ -22,11 +22,6 @@ class NCMainViewController: UIViewController {
         super.awakeFromNib()
         
         fetchMenuFromPlist()
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -46,7 +41,21 @@ class NCMainViewController: UIViewController {
     }
 }
 
-extension NCMainViewController: NCMenuViewControllerDelegate, NCNavigatorViewControllerDelegate {
+extension NCMainViewController: NCMenuViewControllerDelegate, NCNavigatorViewControllerDelegate, UIViewControllerTransitioningDelegate {
+    func navigatorViewControllerDidClickListButton(_ vc: NCNavigatorViewController) {
+        let listVC = UIStoryboard(name: "NutritionCalculator", bundle: nil)
+            .instantiateViewController(withIdentifier: "ListVC") as! NCListViewController
+        listVC.transitioningDelegate = self
+        listVC.modalPresentationStyle = .custom
+        present(listVC, animated: true, completion: nil)
+    }
+    
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        let rect = CGRect(x: 0, y: nutritionLabelsContainer.frame.height + 10,
+                          width: view.frame.width, height: view.frame.height - nutritionLabelsContainer.frame.height - 10)
+        return CustomFramePresentationController(presented: presented, presenting: presenting, frame: rect)
+    }
+    
     func menuViewControllerDidUpdateChosenFood(_ vc: NCMenuViewController, chosenFood: [NCFood]) {
         let nutritions = menu.getSumNutritions(with: chosenFood)
         nutritionLabels[0].text = "\(nutritions.calories)/\(nutritions.calories_joule)"
