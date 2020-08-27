@@ -55,10 +55,13 @@ extension NCMenuViewController: UICollectionViewDelegate, UICollectionViewDataSo
         if let food = menu?.menu[currentCategory]?[indexPath.row] {
             
             if cell.isChosen {
-                for i in 0...chosenFood.count - 1 {
-                    if chosenFood[i].name == food.name { chosenFood.remove(at: i); break }
+                while (chosenFood.firstIndex(of: food) != nil) {
+                    for i in 0...chosenFood.count - 1 {
+                        if chosenFood[i] == food { chosenFood.remove(at: i); break }
+                    }
                 }
             } else {
+                chosenFood.append(food)
                 chosenFood.append(food)
             }
             
