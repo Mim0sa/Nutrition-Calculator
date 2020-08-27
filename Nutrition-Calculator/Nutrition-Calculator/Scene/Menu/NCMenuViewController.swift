@@ -62,7 +62,6 @@ extension NCMenuViewController: UICollectionViewDelegate, UICollectionViewDataSo
                 }
             } else {
                 chosenFood.append(food)
-                chosenFood.append(food)
             }
             
             UIView.performWithoutAnimation { self.collectionView.reloadItems(at: [indexPath]) }
