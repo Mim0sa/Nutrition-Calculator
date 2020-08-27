@@ -267,7 +267,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️能量约苹果2个" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Nw-pz-VVO">
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️能量约苹果2个" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Nw-pz-VVO">
                                                     <rect key="frame" x="29.333333333333336" y="195.66666666666666" width="81.666666666666657" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -279,11 +279,13 @@
                                         <constraints>
                                             <constraint firstItem="7Nw-pz-VVO" firstAttribute="centerY" secondItem="ADI-69-MEO" secondAttribute="centerY" multiplier="1.8" id="3VK-V5-wYA"/>
                                             <constraint firstItem="GXZ-Tw-ahQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ADI-69-MEO" secondAttribute="leadingMargin" id="6If-f3-zrf"/>
+                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="7Nw-pz-VVO" secondAttribute="trailing" id="7B8-Qc-VIs"/>
                                             <constraint firstItem="Qax-HM-IXd" firstAttribute="centerY" secondItem="ADI-69-MEO" secondAttribute="centerY" multiplier="0.8" id="9Tn-tN-Fph"/>
                                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="GXZ-Tw-ahQ" secondAttribute="trailing" id="B0t-n5-swm"/>
                                             <constraint firstItem="GXZ-Tw-ahQ" firstAttribute="centerX" secondItem="ADI-69-MEO" secondAttribute="centerX" id="DjH-Qf-eA2"/>
                                             <constraint firstItem="GXZ-Tw-ahQ" firstAttribute="centerY" secondItem="ADI-69-MEO" secondAttribute="centerY" multiplier="1.55" id="OQc-o1-oY9"/>
                                             <constraint firstItem="Qax-HM-IXd" firstAttribute="width" secondItem="ADI-69-MEO" secondAttribute="width" multiplier="0.885714" id="VsX-tn-GFc"/>
+                                            <constraint firstItem="7Nw-pz-VVO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ADI-69-MEO" secondAttribute="leadingMargin" id="cLb-Iw-BcW"/>
                                             <constraint firstItem="7Nw-pz-VVO" firstAttribute="centerX" secondItem="ADI-69-MEO" secondAttribute="centerX" id="o3F-5F-4TL"/>
                                             <constraint firstItem="Qax-HM-IXd" firstAttribute="centerX" secondItem="ADI-69-MEO" secondAttribute="centerX" id="ub3-lr-bj0"/>
                                         </constraints>
@@ -349,7 +351,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="G8u-09-XTX">
-                                <rect key="frame" x="0.0" y="0.0" width="346" height="86"/>
+                                <rect key="frame" x="0.0" y="0.0" width="412" height="86"/>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewLayout key="collectionViewLayout" id="AgC-NI-nXu" customClass="NCNavigatorFlowLayout" customModule="Nutrition_Calculator" customModuleProvider="target"/>
                                 <cells>
@@ -401,7 +403,7 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABG-Rk-C6p">
-                                <rect key="frame" x="348" y="0.0" width="66" height="88"/>
+                                <rect key="frame" x="414" y="0.0" width="0.0" height="88"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="Burger"/>
                                 <connections>
@@ -412,7 +414,7 @@
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="G8u-09-XTX" firstAttribute="top" secondItem="KMG-HW-0GJ" secondAttribute="top" id="0zy-Kt-xUt"/>
-                            <constraint firstAttribute="trailing" secondItem="G8u-09-XTX" secondAttribute="trailing" constant="68" id="7cA-Yw-Jeb"/>
+                            <constraint firstAttribute="trailing" secondItem="G8u-09-XTX" secondAttribute="trailing" constant="2" id="7cA-Yw-Jeb"/>
                             <constraint firstAttribute="bottom" secondItem="G8u-09-XTX" secondAttribute="bottom" constant="4" id="GdT-Qt-WDc"/>
                             <constraint firstItem="ABG-Rk-C6p" firstAttribute="leading" secondItem="G8u-09-XTX" secondAttribute="trailing" constant="2" id="Lr4-jT-H4s"/>
                             <constraint firstItem="ABG-Rk-C6p" firstAttribute="top" secondItem="KMG-HW-0GJ" secondAttribute="top" id="Opx-uU-ze9"/>

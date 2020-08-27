@@ -58,5 +58,6 @@ extension NCNavigatorViewController: UICollectionViewDelegate, UICollectionViewD
         delegate?.navigatorViewControllerDidUpdateChosenCategory(self, categoryName: (menu?.categoryList[indexPath.row])!)
     }
     
-    static let categoryImageName: [String:String] = ["汉堡":"巨无霸", "小食":"薯条", "甜品":"圆筒冰淇淋", "饮料":"可口可乐", "早餐":"猪柳蛋麦满分"]
+    static let categoryImageName: [String:String] = ["汉堡":"巨无霸", "小食":"薯条", "甜品":"圆筒冰淇淋", "饮料":"可口可乐", "早餐":"猪柳蛋麦满分", "开心乐园餐":"开心乐园餐",
+                                                     "McCafé 咖啡":"卡布奇诺", "McCafé 茶饮":"抹茶拿铁", "McCafé 雪冰":"摩卡雪冰", "McCafé 糕点":"经典芝士蛋糕"]
 }

@@ -58,5 +58,6 @@ struct NCMenu {
         return nutritions
     }
     
-    private static let categoryOrder: [String] = ["汉堡", "小食", "甜品", "饮料", "早餐", "开心乐园餐", "咖啡", "茶饮", "雪冰", "糕点"]
+    private static let categoryOrder: [String] = ["汉堡", "小食", "甜品", "饮料", "早餐", "开心乐园餐",
+                                                  "McCafé 咖啡", "McCafé 茶饮", "McCafé 雪冰", "McCafé 糕点"]
 }

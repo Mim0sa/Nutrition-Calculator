@@ -35,7 +35,7 @@ func printStr(with model: Model) {
 }
 
 let rawStr: Model =
-    (name: "鲜美烟肉早晨全餐", des: "能量约桔子7个", cate: "早餐", cateIndex: 17,
-     calories: 474, pro: 27.2, fat: 20.5, carbo: 42.4, sodium: 1117, calcium: 196)
+    (name: "焦糖巧克力千层蛋糕", des: "能量约油条1根", cate: "McCafé 糕点", cateIndex: 10,
+     calories: 266, pro: 5.7, fat: 12, carbo: 33.2, sodium: 90, calcium: 53)
 
 printStr(with: rawStr)
