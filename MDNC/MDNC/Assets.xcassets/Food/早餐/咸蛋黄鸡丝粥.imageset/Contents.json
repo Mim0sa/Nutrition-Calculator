@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "咸蛋黄鸡丝粥.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "咸蛋黄鸡丝粥@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "咸蛋黄鸡丝粥@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

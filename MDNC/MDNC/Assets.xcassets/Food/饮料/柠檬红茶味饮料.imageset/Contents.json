@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "柠檬红茶味饮料.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "柠檬红茶味饮料@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "柠檬红茶味饮料@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
