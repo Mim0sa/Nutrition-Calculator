@@ -15,6 +15,8 @@
 		834469BB25135D14002BF2D0 /* NCMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834469BA25135D14002BF2D0 /* NCMainVC.swift */; };
 		834469C025135DAA002BF2D0 /* IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834469BF25135DAA002BF2D0 /* IBInspectable.swift */; };
 		834469C925136059002BF2D0 /* MDNC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834469C725136059002BF2D0 /* MDNC.storyboard */; };
+		83446AA925149D1B002BF2D0 /* NCCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83446AA825149D1B002BF2D0 /* NCCategoryVC.swift */; };
+		83ECD43A2514B05600FD08DB /* MDNCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ECD4392514B05600FD08DB /* MDNCModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		834469BA25135D14002BF2D0 /* NCMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCMainVC.swift; sourceTree = "<group>"; };
 		834469BF25135DAA002BF2D0 /* IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBInspectable.swift; sourceTree = "<group>"; };
 		834469C825136059002BF2D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MDNC.storyboard; sourceTree = "<group>"; };
+		83446AA825149D1B002BF2D0 /* NCCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCCategoryVC.swift; sourceTree = "<group>"; };
+		83ECD4392514B05600FD08DB /* MDNCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDNCModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 				834469A325133A1F002BF2D0 /* Assets.xcassets */,
 				834469B625133C56002BF2D0 /* AppSupport */,
 				834469B525133C21002BF2D0 /* Data */,
+				83ECD4382514B02800FD08DB /* Model */,
 				834469B425133BEA002BF2D0 /* Scene */,
 				834469BD25135D77002BF2D0 /* Utils */,
 			);
@@ -75,6 +80,7 @@
 			children = (
 				834469C725136059002BF2D0 /* MDNC.storyboard */,
 				834469BA25135D14002BF2D0 /* NCMainVC.swift */,
+				83446AA825149D1B002BF2D0 /* NCCategoryVC.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -103,6 +109,14 @@
 				834469BF25135DAA002BF2D0 /* IBInspectable.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		83ECD4382514B02800FD08DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83ECD4392514B05600FD08DB /* MDNCModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +196,8 @@
 				8344699D25133A1E002BF2D0 /* SceneDelegate.swift in Sources */,
 				834469BB25135D14002BF2D0 /* NCMainVC.swift in Sources */,
 				834469C025135DAA002BF2D0 /* IBInspectable.swift in Sources */,
+				83446AA925149D1B002BF2D0 /* NCCategoryVC.swift in Sources */,
+				83ECD43A2514B05600FD08DB /* MDNCModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
