@@ -10,7 +10,9 @@ import Foundation
 class NCModel {
     
     let menu: NCMenu
+    
     var myMenu: [NCFood] = []
+    var currentCategory: String = NCMenu.categoryOrder.first!
     
     init() { menu = NCModel.fetchMenuFromPlist() }
     
@@ -25,7 +27,7 @@ class NCModel {
     }
     
     func removeAll() {
-        myMenu = []
+        myMenu.removeAll()
     }
     
     func getCurrentSumNutritions() -> NCNutrition {
@@ -107,7 +109,7 @@ struct NCMenu {
         }
     }
     
-    private static let categoryOrder: [String] = ["汉堡", "小食", "甜品", "饮料", "早餐", "开心乐园餐",
+    static let categoryOrder: [String] = ["汉堡", "小食", "甜品", "饮料", "早餐", "开心乐园餐",
                                                   "McCafé 咖啡", "McCafé 茶饮", "McCafé 雪冰", "McCafé 糕点"]
 }
 

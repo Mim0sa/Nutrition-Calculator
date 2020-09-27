@@ -130,13 +130,13 @@
                                     <constraint firstAttribute="height" constant="100" id="3W2-jQ-bbL"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="TiA-Zk-CZR" kind="embed" id="h5G-SN-n0m"/>
+                                    <segue destination="TiA-Zk-CZR" kind="embed" identifier="NCCategoryVC" id="h5G-SN-n0m"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgb-cs-Gmq">
                                 <rect key="frame" x="20" y="375.5" width="374" height="520.5"/>
                                 <connections>
-                                    <segue destination="Lpm-e4-phG" kind="embed" id="IMV-7E-jAt"/>
+                                    <segue destination="Lpm-e4-phG" kind="embed" identifier="NCMenuVC" id="IMV-7E-jAt"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -173,7 +173,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewLayout key="collectionViewLayout" id="C7G-Lf-upH" customClass="NCCategoryFlowLayout" customModule="MDNC" customModuleProvider="target"/>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NCCategoryCell" id="fqS-ES-x8X">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NCCategoryCell" id="fqS-ES-x8X" customClass="NCCategoryCell" customModule="MDNC" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="86" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BAd-0g-kyV">
@@ -248,6 +248,10 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="86" height="100"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="8aT-27-SY3" id="4dK-o9-Kf6"/>
+                                            <outlet property="titleLabel" destination="1s0-rE-jpj" id="WsS-8l-Djm"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -283,7 +287,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewLayout key="collectionViewLayout" id="IgM-tH-73U" customClass="NCMenuFlowLayout" customModule="MDNC" customModuleProvider="target"/>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NCMenuCell" id="fRa-5o-inm">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NCMenuCell" id="fRa-5o-inm" customClass="NCMenuCell" customModule="MDNC" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="124" height="193"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jSy-Pp-ont">
@@ -319,7 +323,7 @@
                                                                 </label>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYx-j9-ccK">
                                                                     <rect key="frame" x="0.0" y="121" width="96" height="44"/>
-                                                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="44" id="ZOx-qD-l5H"/>
                                                                     </constraints>
@@ -364,6 +368,11 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="124" height="193"/>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="kjp-VF-R1i" id="Ce6-sg-CrE"/>
+                                            <outlet property="imageView" destination="L6q-Kd-s0b" id="vps-Sc-JM8"/>
+                                            <outlet property="titleLabel" destination="GnU-aT-H0F" id="axK-NI-8VU"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

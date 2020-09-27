@@ -9,6 +9,8 @@ import UIKit
 
 class NCMenuVC: UIViewController {
     
+    var model: NCModel?
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -22,13 +24,24 @@ class NCMenuVC: UIViewController {
 
 extension NCMenuVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        guard let numberOfItems = model?.menu.menu[model?.currentCategory ?? ""]?.count else { return 0 }
+        return numberOfItems
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NCMenuCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NCMenuCell", for: indexPath) as! NCMenuCell
+        guard let food = model?.menu.menu[model?.currentCategory ?? ""]?[indexPath.row] else { fatalError("Model should not be nil") }
+        cell.imageView.image = UIImage(named: food.name)
+        cell.titleLabel.text = food.name
+        cell.descriptionLabel.text = food.description == "" ? " " : "⚡️" + food.description
         return cell
     }
+}
+
+class NCMenuCell: UICollectionViewCell {
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
 }
 
 class NCMenuFlowLayout: UICollectionViewFlowLayout {
