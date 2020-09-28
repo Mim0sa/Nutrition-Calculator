@@ -14,6 +14,8 @@ class NCMainVC: UIViewController {
     var categoryVC: NCCategoryVC!
     var menuVC: NCMenuVC!
     
+    @IBOutlet var nutritionLabels: [UILabel]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,6 +37,14 @@ class NCMainVC: UIViewController {
         }
     }
     
+    func updateNutritionLabels() {
+        let nutritions = model.getCurrentSumNutritions()
+        nutritionLabels[0].text = "\(nutritions.calories)"
+        nutritionLabels[1].text = String(format: "%.0f", nutritions.protein)
+        nutritionLabels[2].text = String(format: "%.0f", nutritions.fat)
+        nutritionLabels[3].text = String(format: "%.0f", nutritions.carbohydrate)
+    }
+    
     @objc func handleCategoryChangedNotification() {
         categoryVC.collectionView.reloadData()
         menuVC.collectionView.reloadData()
@@ -42,6 +52,7 @@ class NCMainVC: UIViewController {
     
     @objc func handleMyMenuChangedNotification() {
         menuVC.collectionView.reloadData()
+        updateNutritionLabels()
     }
     
 }
