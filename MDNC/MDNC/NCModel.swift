@@ -10,10 +10,14 @@ import Foundation
 class NCModel {
     
     static let categoryChangedNotification = Notification.Name("CategoryChanged")
+    static let myMenuChangedNotification = Notification.Name("MyMenuChanged")
     
     let menu: NCMenu
     
-    var myMenu: [NCFood] = []
+    var myMenu: [NCFood] = [] {
+        didSet { NotificationCenter.default.post(name: NCModel.myMenuChangedNotification, object: nil) }
+    }
+    
     var currentCategory: String = NCMenu.categoryOrder.first! {
         didSet { NotificationCenter.default.post(name: NCModel.categoryChangedNotification, object: nil) }
     }

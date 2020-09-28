@@ -32,6 +32,7 @@ extension NCCategoryVC: UICollectionViewDelegate, UICollectionViewDataSource {
         guard let categoryList = model?.menu.categoryList else { fatalError("Model should not be nil") }
         cell.imageView.image = UIImage(named: NCCategoryVC.categoryImageName[categoryList[indexPath.row]] ?? "")
         cell.titleLabel.text = categoryList[indexPath.row]
+        cell.isCurrent = model?.currentCategory == model?.menu.categoryList[indexPath.row]
         return cell
     }
     
@@ -44,8 +45,13 @@ extension NCCategoryVC: UICollectionViewDelegate, UICollectionViewDataSource {
 }
 
 class NCCategoryCell: UICollectionViewCell {
+    @IBOutlet weak var content: UIView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    
+    var isCurrent = false {
+        didSet { content.backgroundColor = isCurrent ? MDYellow : UIColor.white }
+    }
 }
 
 class NCCategoryFlowLayout: UICollectionViewFlowLayout {

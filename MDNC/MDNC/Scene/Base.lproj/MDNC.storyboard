@@ -39,8 +39,8 @@
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="437" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="OWp-MR-XHd">
-                                                        <rect key="frame" x="12" y="27.5" width="52" height="33.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="OWp-MR-XHd">
+                                                        <rect key="frame" x="28.5" y="27.5" width="18.5" height="33.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -55,8 +55,8 @@
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Edg-K0-kyB">
-                                                        <rect key="frame" x="20.5" y="27.5" width="35" height="33.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Edg-K0-kyB">
+                                                        <rect key="frame" x="28.5" y="27.5" width="18.5" height="33.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -71,8 +71,8 @@
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="42" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZKT-ZP-9dQ">
-                                                        <rect key="frame" x="20.5" y="27.5" width="35" height="33.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZKT-ZP-9dQ">
+                                                        <rect key="frame" x="28.5" y="27.5" width="18.5" height="33.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -87,8 +87,8 @@
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="0kU-Rd-cLl">
-                                                        <rect key="frame" x="22" y="27.5" width="31.5" height="33.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="0kU-Rd-cLl">
+                                                        <rect key="frame" x="28.5" y="27.5" width="18.5" height="33.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -200,7 +200,7 @@
                                                                     <real key="value" value="5"/>
                                                                 </userDefinedRuntimeAttribute>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                                    <real key="value" value="1"/>
+                                                                    <real key="value" value="0.0"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
@@ -249,6 +249,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="86" height="100"/>
                                         <connections>
+                                            <outlet property="content" destination="Iqn-cj-JvU" id="M4r-Px-FtP"/>
                                             <outlet property="imageView" destination="8aT-27-SY3" id="4dK-o9-Kf6"/>
                                             <outlet property="titleLabel" destination="1s0-rE-jpj" id="WsS-8l-Djm"/>
                                         </connections>
@@ -369,6 +370,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="124" height="193"/>
                                         <connections>
+                                            <outlet property="content" destination="gT0-37-pdw" id="Hor-CV-uKN"/>
                                             <outlet property="descriptionLabel" destination="kjp-VF-R1i" id="Ce6-sg-CrE"/>
                                             <outlet property="imageView" destination="L6q-Kd-s0b" id="vps-Sc-JM8"/>
                                             <outlet property="titleLabel" destination="GnU-aT-H0F" id="axK-NI-8VU"/>
@@ -381,7 +383,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aNd-mx-EZP" firstAttribute="top" secondItem="iJD-1n-b2J" secondAttribute="top" id="DGQ-9G-1Sk"/>
-                            <constraint firstItem="aNd-mx-EZP" firstAttribute="bottom" secondItem="pWG-06-7zb" secondAttribute="bottom" id="WoK-tX-kUa"/>
+                            <constraint firstItem="aNd-mx-EZP" firstAttribute="bottom" secondItem="iJD-1n-b2J" secondAttribute="bottom" id="WoK-tX-kUa"/>
                             <constraint firstItem="aNd-mx-EZP" firstAttribute="trailing" secondItem="pWG-06-7zb" secondAttribute="trailing" id="ftk-aN-eAa"/>
                             <constraint firstItem="aNd-mx-EZP" firstAttribute="leading" secondItem="pWG-06-7zb" secondAttribute="leading" id="iA2-NQ-EUj"/>
                         </constraints>

@@ -18,6 +18,7 @@ class NCMainVC: UIViewController {
         super.viewDidLoad()
         
         NotificationCenter.default.addObserver(self, selector: #selector(handleCategoryChangedNotification), name: NCModel.categoryChangedNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleMyMenuChangedNotification), name: NCModel.myMenuChangedNotification, object: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -35,7 +36,14 @@ class NCMainVC: UIViewController {
     }
     
     @objc func handleCategoryChangedNotification() {
+        categoryVC.collectionView.reloadData()
+        menuVC.collectionView.reloadData()
+    }
+    
+    @objc func handleMyMenuChangedNotification() {
         menuVC.collectionView.reloadData()
     }
     
 }
+
+let MDYellow = UIColor(red: 240/255, green: 210/255, blue: 140/255, alpha: 1)

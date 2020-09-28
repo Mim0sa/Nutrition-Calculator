@@ -34,14 +34,32 @@ extension NCMenuVC: UICollectionViewDelegate, UICollectionViewDataSource {
         cell.imageView.image = UIImage(named: food.name)
         cell.titleLabel.text = food.name
         cell.descriptionLabel.text = food.description == "" ? " " : "⚡️" + food.description
+        cell.isChosen = model!.myMenu.contains(food)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let food = model?.menu.menu[model?.currentCategory ?? ""]?[indexPath.row] else { fatalError("Model should not be nil") }
+        if model!.myMenu.contains(food) {
+            model?.remove(food: food)
+        } else {
+            model?.add(food: food)
+        }
     }
 }
 
 class NCMenuCell: UICollectionViewCell {
+    @IBOutlet weak var content: UIView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    
+    var isChosen = false {
+        didSet {
+            content.layer.borderWidth = isChosen ? 2 : 0
+            content.layer.borderColor = MDYellow.cgColor
+        }
+    }
 }
 
 class NCMenuFlowLayout: UICollectionViewFlowLayout {
