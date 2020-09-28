@@ -14,6 +14,12 @@ class NCMainVC: UIViewController {
     var categoryVC: NCCategoryVC!
     var menuVC: NCMenuVC!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(handleCategoryChangedNotification), name: NCModel.categoryChangedNotification, object: nil)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier else { return }
         
@@ -26,6 +32,10 @@ class NCMainVC: UIViewController {
             self.menuVC = menuVC
             menuVC.model = model
         }
+    }
+    
+    @objc func handleCategoryChangedNotification() {
+        menuVC.collectionView.reloadData()
     }
     
 }
