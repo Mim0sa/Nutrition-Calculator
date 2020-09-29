@@ -58,6 +58,8 @@ class NCMenuCell: UICollectionViewCell {
         didSet {
             content.layer.borderWidth = isChosen ? 2 : 0
             content.layer.borderColor = MDYellow.cgColor
+            
+            descriptionLabel.alpha = isChosen ? 1 : 0
         }
     }
 }
